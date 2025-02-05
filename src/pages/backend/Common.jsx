@@ -1,13 +1,19 @@
 export default function Common() {
   return (
     <pre>
+      ### basics info
+
+      <span>
+        ** Huge data quantity not affect as text but as UI rendering
+        ** html structure multiply responded arrays' size
+      </span>
 
       ### basics topics
 
       <span>
         ** schedule code & commands
 
-        ** Routing 
+        ** Routing
         <span>
           **** request ( url & header & body & method ) --- middleware --- server logic --- response ( status & header & body & method )
           **** dynamic paths & path parameters & filter routes by param types
@@ -21,7 +27,7 @@ export default function Common() {
 
         ** Authentication
         <span>
-          **** middleware {/* => */} auth (api or web) & guest & throttle  
+          **** middleware {/* => */} auth (api or web) & guest & throttle
           **** password validation rules
           **** Admin multi Auth
           **** API Auth && CORS
@@ -35,7 +41,7 @@ export default function Common() {
           **** "paysky" OR "paymob" OR "fawrypay"
         </span>
 
-        ** patterns MVC  ( database , UI , connector )   
+        ** patterns MVC  ( database , UI , connector )
 
       </span>
 
