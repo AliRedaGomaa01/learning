@@ -7,14 +7,8 @@ export default function Express() {
 
         <span>
           * Npm package manager of node
-          * node is server side js runner   and also nodemon
-          * express is a framework with many functions , tools , and rules that runs as our server in node.js
-        </span>
-
-        ### syntax
-
-        <span>
-          * to export we use {"== >>>"}  module.exports = …
+          * node is server side js runner and also nodemon
+          * express is a node web server with prepared ( many functions , tools , and rules )
         </span>
 
         ### terminal cmds
@@ -23,18 +17,18 @@ export default function Express() {
           * npm install {"<package>"}
           * npm init {"== >>>"} start node project
           * node app.js {"== >>>"} run file as build
-          * nodemon app.js  {"== >>>"} run file as dev & listen to file changes // needs node monster package
+          * nodemon app.js  {"== >>>"} run file as dev & listen to file changes
         </span>
 
         ### env & app defineConfig
         <span>
-          * app.set('view engine' , 'ejs') 
+          * app.set('view engine' , 'ejs')
         </span>
 
         ### dependencies
         <span>
           * use --save with development & production dependencies  ( default )
-          &nbsp; &nbsp; but use  --save-dev for development dependencies
+          &nbsp; &nbsp; but use --save-dev for development dependencies
         </span>
 
         ###  packages
@@ -56,14 +50,15 @@ export default function Express() {
         ### app structure
         <span>
           **  public folder {"=>"} for assets which is accessible by users ( css , js , imgs )
-          &nbsp; &nbsp; to access files in public we must use express.static( …code )
-          **  routes folder {"=>"} for routing files
+          &nbsp; &nbsp; to access files in public we must use {/* =>> */} express.static( ) function
         </span>
 
         ### views
         <span>
-          **  express template engines are ( EJS --- pug "Jade" --- handlebars  )
-          ****** they are used as external packages and have their own docs
+          **  express template engines are ( EJS --- pug --- handlebars  )
+          <span>
+            **** they are used as external packages and have their own docs
+          </span>
         </span>
 
       </pre>

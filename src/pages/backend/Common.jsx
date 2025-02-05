@@ -7,15 +7,21 @@ export default function Common() {
       <span>
         ** schedule code & commands
 
-        ** Routing ( paths --- dynamic paths --- middleware --- prefix --- name --- grouping )
+        ** Routing 
+        <span>
+          **** request ( url & header & body & method ) --- middleware --- server logic --- response ( status & header & body & method )
+          **** dynamic paths & path parameters & filter routes by param types
+          **** Route prefix & Route name
+          **** grouping
+        </span>
 
-        ** views ( template engine )
+        ** views ( template engines )
 
         ** file system & file management
 
         ** Authentication
         <span>
-          **** auth & guest middleware
+          **** middleware {/* => */} auth (api or web) & guest & throttle  
           **** password validation rules
           **** Admin multi Auth
           **** API Auth && CORS
@@ -27,8 +33,6 @@ export default function Common() {
           **** stripe
           **** braintree & paypal
           **** "paysky" OR "paymob" OR "fawrypay"
-          **** API Auth && CORS
-          **** 3-party auth ( facebook - google )
         </span>
 
         ** patterns MVC  ( database , UI , connector )   
