@@ -1,7 +1,11 @@
 export default function Common() {
   return (
-    <div>
-      <h1>Common</h1>
-    </div>
+    <pre>
+      ### Authentication
+      <span>
+        ** storeToken & user in global state
+        ** conditionally define routes by token state
+      </span>
+    </pre>
   );
 }

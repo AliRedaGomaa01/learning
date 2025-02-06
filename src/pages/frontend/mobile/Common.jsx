@@ -4,7 +4,7 @@ export default function Common() {
       ### basic info :
       <span>
         ** In Backend I can work with Firebase Or local Sqlite  Or remote web server
-        ** In cross platform we depend on prepared tools that fit IOS & Android &&& a custom combination of these tools 
+        ** In cross platform we depend on prepared tools that fit IOS & Android &&& a custom combination of these tools
       </span>
 
       ### basic topics :
@@ -14,12 +14,13 @@ export default function Common() {
 
       ### running code :
       <span>
-        ** we can use Android Emulator ( android studio ) OR IOS simulator ( Mac & Xcode mobile app ) 
+        ** we can use Android Emulator ( android studio ) OR IOS simulator ( Mac & Xcode mobile app )
       </span>
 
       ### Routing & Navigation :
       <span>
         ** we can navigate using Global State
+        ** stack means push to front
       </span>
 
       ### FCM
@@ -40,8 +41,11 @@ export default function Common() {
 
       ### native device features ( camera , gps , ... )
 
-      ### integrate native code into cross-platform app 
-
+      ### platforms: 
+      <span>
+        ** integrate native code into cross-platform app
+        ** can write specific code for each platform
+      </span>
     </pre>
   );
 }
