@@ -1,8 +1,11 @@
 export default function Js() {
   return (
     <>
-    <h1> Code notes </h1>
-      {" ** (cbFn) => { cbFn(); }"}
+      ### Code notes
+      <span>
+        ** {"  (cbFn) => { cbFn(); }"}
+        ** use spread operator to avoid immutables
+      </span>
     </>
   )
 }

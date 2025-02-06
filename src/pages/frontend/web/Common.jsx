@@ -1,7 +1,17 @@
 export default function Common() {
   return (
-    <div>
-      <h1>Common</h1>
-    </div>
+    <pre>
+      ### basic info :
+      <span>
+        ** most FE frameworks uses CLI 
+      </span>
+
+      ### basic topics :
+      <span>
+
+      </span>
+
+
+    </pre>
   );
 }

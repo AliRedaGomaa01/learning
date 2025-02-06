@@ -1,6 +1,6 @@
 export default function Flutter() {
   return (
-    <div>
+    <pre>
       ### basic info :
       <span>
         ** we consider any function with return type of Future as a promise myFn().then().catchError()
@@ -16,6 +16,6 @@ export default function Flutter() {
       </span>
 
 
-    </div>
+    </pre>
   );
 }
