@@ -5,6 +5,7 @@ export default function Common() {
       <span>
         ** you can download SQL server on you machine OR get it as software service like XXAMP , LARAGON
         ** we make a connect between app & server ALSO we call server before every query
+        ** ORM Object Relational Mapping
       </span>
 
       ### difference between SQL & NSQL
