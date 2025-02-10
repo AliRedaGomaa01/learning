@@ -10,7 +10,7 @@ export default function Common() {
 
       ### difference between SQL & NSQL
       <span>
-        ** the difference is structure & schema PLUS relations
+        ** the difference is structure & schema & content validation PLUS relations
         ** if you not follow structure in SQL you get error unlike NSQL that is is schema-less
         ** NSQL has no or low relations unlike SQL
         ** NSQL duplicate data
