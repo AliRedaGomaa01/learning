@@ -120,7 +120,9 @@ let Github = () => (
             restore --staged <file-name> 
               // restore staged changes // discard changes after staged
 
-            وا قف هنا  
+******************************
+وا قف هنا  
+******************************
             
             // reset used with local changes 
             reset <commit-hash>  // delete commits after it and put its changes in unstaged
