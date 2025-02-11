@@ -4,6 +4,8 @@ export default function Express() {
       ### basics
       <span>
         ** ORM & 3rd libraries : sequelize library with mysql2 library ( SQL )
+        ** ODM (Object Document Mapper) : Mongoose ( NSQL )
+        Sequelize & Mongooose has their own doc. 
       </span>
 
       ### nosql & mongo DB

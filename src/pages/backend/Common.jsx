@@ -1,25 +1,26 @@
 export default function Common() {
   return (
-    <pre>
+    <>
+      {`    
       ### basics info
 
-      <span>
         ** Huge data quantity not affect as text but as UI rendering
         ** html structure multiply responded arrays' size
-      </span>
 
       ### basics topics
 
-      <span>
-        ** schedule code & commands
+        # schedule code & commands
+
+        #  cookies && sessions && caache
+          ** cookies 
+            ***  stored on browser 
+            *** handled by requests & responses 
 
         ** Routing
-        <span>
           **** request ( url & header & body & method ) --- middleware --- server logic --- response ( status & header & body & method )
           **** dynamic paths & path parameters & filter routes by param types
           **** Route prefix & Route name
           **** grouping
-        </span>
 
         ** views ( template engines )
 
@@ -50,6 +51,7 @@ export default function Common() {
         ** template engine  ( server html --- easy & fast & beautiful syntax --- shortcuts & less lines -- layout inheritance & less repeats)
       </span>
 
-    </pre>
+    </pre>`}
+    </>
   );
 }
