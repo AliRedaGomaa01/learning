@@ -1,4 +1,4 @@
-export default function Js() {
+export default function Javascript() {
   return (
     <>
       ### Code notes

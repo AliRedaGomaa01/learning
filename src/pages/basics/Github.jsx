@@ -114,39 +114,29 @@ let Github = () => (
             stash drop <stash-id>  // delete specific stash from stash list  ex.stash@{0}
             stash clear // delete all stashed list
 
-            restore <file-name> // discard unstaged commits from HEAD
+            restore <file-name> 
+              // discard unstaged changes after HEAD
             restore --source <commit-hash> <file-name> 
               // restore specific commit file version 
             restore --staged <file-name> 
               // restore staged changes // discard changes after staged
-
-******************************
-وا قف هنا  
-******************************
             
             // reset used with local changes 
             reset <commit-hash>  // delete commits after it and put its changes in unstaged
             reset –hard <commit-hash>  // delete commits after it and delete its changes
 
-
             // revert used with remote changes 
             revert <commit-hash>  // reverse commits after it and make new commit for the team
 
-
             // rebasing is used to rewrite history ( merging tool or cleanup tool ) 
-
             /** 
-
-            * commits of current branch will not be added to other branch  but commits of current branch will be rewritten to be on tip of the other branch’s commits in the current one only 
-
-            * hash of commits of current will be changes
-
-            * don’t rebase commits that pushed to github because others may have used it
-
-            * interactive rebase enable you to manipulate commits in history like rename or delete or merge  ( pick to remain as it OR reword to rename OR fixup to merge with previous and delete previous )
-
+              * commits of current branch will not be added to other branch  
+                but commits of current branch will be rewritten to be on tip of the other branch’s commits in the current one only 
+              * hash of commits of current will be changes
+              * don’t rebase commits that pushed to github because others may have used it
+              * interactive rebase enable you to manipulate commits in history like rename or delete or merge  
+                ( pick to remain as it OR reword to rename OR fixup to merge with previous and delete previous )
             */
-
 
             rebase <other-branch>  // rewrite current branch’s commits from other
             rebase -i HEAD~4  // go to interactive mode 4 commits before end in HEAD
@@ -159,75 +149,69 @@ let Github = () => (
         github pull request => used to ask the admin to merge your branch with the main one if the policy says this 
 
         github commands : 
-        clone <remote-repo-url>
 
+          clone <remote-repo-url>
 
-        remote -v // view current remotes
-        remote add <name> <url> 
-        remote set-url <name> <url>
-        remote rename  <old-name> <new-name>
-        remote remove <name>
+          config --local user.name “Ali”  // set user name locally for current project
+          config --global user.email “a@a.a” // set user email globally for your PC
+          config --global alias.sts status // make sts as alisa for status keyword
 
+          remote -v // view current remotes
+          remote add <name> <url> 
+          remote set-url <name> <url>
+          remote rename  <old-name> <new-name>
+          remote remove <name>
 
-        push <remote-name> <local-&-remote-branch-name>
-        push <remote-name> <local-branch-name>:<remote-branch-name>
-        push -u <remote-name> <branch-name> // set upstream to use push only in future
-        push // used if we setted upstream usign -u  that save configration
+          push <remote-name> <local-&-remote-branch-name>
+          push <remote-name> <local-branch-name>:<remote-branch-name>
+          push -u <remote-name> <branch-name> // set upstream to use push only in future
+          push // used if we setted upstream usign -u  that save configration
 
+          pull <remote-name> <branch-name>
 
-        pull <remote-name> <branch-name>
+          fetch <remote-name>  // all remote branches updates 
+          fetch <remote-name> <remote-branch>   // one remote branches updates 
 
+          tag // list of all tags in whole repo 
+          tag  <new-name>// add new lightweight tag to HEAD
+          tag -a <new-name>// add new annotated -explained with message- tag to HEAD
+          tag  <new-name> <commit-hash>// add new tag to specific previous commit
+          tag  <new-name> <commit-hash> -f // rewrite commit tag
+          tag -d <tag-name>// delete specific tag
+          // we can write tag name instead of commit hash 
+          // there is only 1 tag per 1 commit 
+          checkout <tag-name> // show commit of this tag
+          show <tag-name> // show tag details
+          push origin <tag-name> // push specific tag
+          push origin --tags // push all local tags 
 
-        fetch <remote-name>  // all remote branches updates 
-        fetch <remote-name> <remote-branch>   // one remote branches updates 
+          clean -Xfdn  // preview ignored files and folders that will be deleted
+          clean -Xfd  // delete ignored files and folders
 
-
-        tag // list of all tags in whole repo 
-        tag  <new-name>// add new lightweight tag to HEAD
-        tag  <new-name> <commit-hash>// add new tag to specific previous commit
-        tag  <new-name> <commit-hash> -f // rewrite commit tag
-        tag -a <new-name>// add new annotated -explained with message- tag to HEAD
-        tag -d <tag-name>// delete specific tag
-        checkout <tag-name> // show commit of this tag
-        show <tag-name> // show tag details
-        push origin <tag-name> // push specific tag
-        push origin --tags // push all local tags 
-
-        // we can write tag name instead of commit hash 
-        // there is only 1 tag per 1 commit 
-
-
-
-        config --local user.name “Ali”  // set user name locally for current project
-        config --global user.email “a@a.a” // set user email globally for your PC
-        config --global alias.sts status // make sts as alisa for status keyword
-
-
-
-        clean -Xfdn  // preview ignored files and folders that will be deleted
-        clean -Xfd  // delete ignored files and folders
+***********************************************************************************************************************
 
         pull request to GUI merging on github
 
-        I can make branch protection roles 
+        We can make branch protection roles 
+        
         Fork
-        Github can make personal copy of other’s repo and this copy is called fork and is able to make pull request between two repo
-        and you can pull from the original origin repo then push to fork upstream repo and pull request from fork to original
+          Github can make personal copy of other’s repo and this copy is called fork and is able to make pull request between the two repositories.
+          and you can pull from the original origin repo then push to fork upstream repo and pull request from fork to original
 
         .gitignore 
-        file.txt
-        folder/  // all directory  &&& if write without ‘/’ will consider it a file  
-        *.css   // all css files 
+          file.txt
+          folder/  // all directory  &&& if write without ‘/’ will consider it a file  
+          *.css   // all css files 
 
         markdown
-        there is markdown docs
-        you can reach syntax by examples like search spaCy package repo on github for readme example
-        use markdowndemo website to see result & examples 
-        h1-h6  #-######
-        **bold** *italic* `+ `marked` + "  ```  highlighted code ``` " + `  
-        ( ctrl  + shift + p ) then choose ( markdown open preview )  
+          there is markdown docs
+          you can reach syntax by examples like search spaCy package repo on github for readme example
+          use markdown demo website to see result & examples 
+          h1-h6  #-######
+          **bold** *italic* `+ `marked` + "  ```  highlighted code ``` " + `  
+          ( ctrl  + shift + p ) then choose ( markdown open preview )  
 
-        semantic versions : majorRelease.minorRelease.patchRelease
+        semantic version release number : majorRelease.minorRelease.patchRelease
 
         Hashing is one-way function ex “ali” => converted always to “ASFADGFAGFAGF” but “ASFADGFAGFAGF” can’t converted to ali 
 
