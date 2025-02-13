@@ -1,13 +1,19 @@
 let Theoretical = () => (
   <pre>
+{`    
     ### important info
-    <span>
-      ** framework has enough builtin tools for development basics but in libraries you must need 3rd parties
-      ** async code is executed in a virtual parallel thread BUT sync in one the main thread
-      ** the importance of states is the reload od specific parts 
-    </span>
+      # framework VS library
+        ** framework has enough builtin tools for development basics but in libraries you must need 3rd parties
+          *** some frameworks has more than tool to make the same thing ||| also make detailed tools foreash simple or complex feature
+          *** so use only basics of the framework that is similar to other frameworks
+          *** dive deep after a year of experience 
+      
+      # async code is executed in a virtual parallel thread BUT sync in the main thread
+      
+      # the importance of states is the reload of specific parts not whole the page 
 
     ### important topics
+    `}
   </pre>
 )
 

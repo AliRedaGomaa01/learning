@@ -4,7 +4,7 @@ export default function Tailwind() {
       {`
         # place-items
         # flex  ( grow & shrink & wrap ) & grid ( rows & cols & span ) & order   
-        #  position & float & z-index 
+        # position & float & z-index 
         # font  (weight - size - upperCase ) & decoration 
         # colors  & gradient 
         # borders & rounded & outline  

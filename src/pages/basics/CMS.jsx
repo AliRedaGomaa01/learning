@@ -1,7 +1,7 @@
 let CMS = () => (
   <pre>{
 `
-      واقف عند الدقيقة 30
+      stopped in minute 30 at first video
       https://www.youtube.com/watch?v=ICFXS5WIS3Y
       https://www.youtube.com/watch?v=GeOearToWEo
       

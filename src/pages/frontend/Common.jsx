@@ -1,11 +1,14 @@
 export default function Common() {
   return (
     <pre>
+      {`
       ### Authentication
-      <span>
         ** storeToken & user in global state
         ** conditionally define routes by token state
-      </span>
+
+      ### design 
+        ** Arabic font => Amiri  && English font => playfair display
+      `}
     </pre>
   );
 }

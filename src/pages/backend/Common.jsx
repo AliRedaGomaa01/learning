@@ -26,7 +26,7 @@ export default function Common() {
           *** dynamic paths & path parameters & filter routes by param types
           *** Route prefix & Route name
           *** grouping
-          *** pass data to all responses or all views
+          *** share data to all responses or all views
 
 
         ** views ( template engines )
@@ -40,7 +40,8 @@ export default function Common() {
           *** Admin multi Auth
           *** API Auth && CORS
           *** 3-party auth ( facebook - google )
-          *** csrf ensures that hte request came from your website not from another fake website
+          *** csrf ensures that the request came from your website not from another fake website ( not optional )
+          *** use both client & server validation :  client reduces requests to server but it's overridable 
         </span>
 
         ** payment

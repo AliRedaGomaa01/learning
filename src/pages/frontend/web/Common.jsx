@@ -2,9 +2,9 @@ export default function Common() {
   return (
     <pre>
 {`      ### basic info :
-      <span>
-        ** most FE frameworks uses CLI 
-      </span>
+          ** most FE frameworks uses CLI 
+          ** component life cycle  ( we must destroy continuous tasks before component is destroyed)
+          ** slots 
 
       ### debugging :
         ** browser extension  ex. angular debug 

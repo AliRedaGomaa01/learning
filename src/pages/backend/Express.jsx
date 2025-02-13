@@ -9,6 +9,7 @@ export default function Express() {
           * Npm package manager of node
           * node is server side js runner and also nodemon
           * express is a node web server with prepared ( many functions , tools , and rules )
+          * sending email is after configuring email serverw
         </span>
 
         ### terminal cmds
@@ -31,7 +32,7 @@ export default function Express() {
           &nbsp; &nbsp; but use --save-dev for development dependencies
         </span>
 
-        ###  packages
+        ###  packages  ( almost every thing is via package )
         <span>
           * express
           * nodemon
