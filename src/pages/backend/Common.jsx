@@ -4,61 +4,63 @@ export default function Common() {
       {`    
       ### basics info
 
-        ** Huge data quantity not affect as text but as UI rendering
-        ** html structure multiply responded arrays' size
+       * Huge data quantity not affect as text but as UI rendering
+       * html structure multiply responded arrays' size
 
       ### basics topics
 
         # schedule code & commands
 
-        #  cookies && sessions && caache
-          ** cookies 
-            ***  stored on browser 
-            *** handled by requests & responses 
-          ** sessions
-            *** it's unique foreach authenticated user
-            *** usually stored in database && and at the same time has cookie on browser
-            *** uses 3rd package => express-session
-            *** used to handle sensitive data like auth & user
+        # Files Handling 
+          * form files & storage -- pdf -- excel 
+          * project's file-path handling  ( public - views - storage )
 
-        ** Routing
-          *** request ( url & header & body & method ) --- middleware --- server logic --- response ( status & header & body & method )
-          *** dynamic paths & path parameters & filter routes by param types
-          *** Route prefix & Route name
-          *** grouping
-          *** share data to all responses or all views
+        #  cookies && sessions && cache
 
+         * cookies 
+            -  stored on browser 
+            - handled by requests & responses 
+         * sessions
+            - it's unique foreach authenticated user
+            - usually stored in database && and at the same time has cookie on browser
+            - uses 3rd package => express-session
+            - used to handle sensitive data like auth & user
 
-        ** views ( template engines )
+       * Routing
+          - request ( url & header & body & method ) --- middleware --- server logic --- response ( status & header & body & method )
+          - dynamic paths & path parameters & filter routes by param types
+          - Route prefix & Route name
+          - grouping
+          - share data to all responses or all views
+          - large data pagination 
 
-        ** file system & file management
+       * views ( template engines )
 
-        ** Authentication  && security
-        <span>
-          *** middleware {/* => */} auth (api or web) & guest & throttle
-          *** password validation rules
-          *** Admin multi Auth
-          *** API Auth && CORS
-          *** 3-party auth ( facebook - google )
-          *** csrf ensures that the request came from your website not from another fake website ( not optional )
-          *** use both client & server validation :  client reduces requests to server but it's overridable 
-        </span>
+       * file system & file management
 
-        ** payment
-        <span>
-          *** stripe
-          *** braintree & paypal
-          *** "paysky" OR "paymob" OR "fawrypay"
-        </span>
+       * Authentication  && security
+          - middleware {/* => */} auth (api or web) & guest & throttle
+          - password validation rules
+          - Admin multi Auth
+          - API Auth && CORS
+          - 3-party auth ( facebook - google )
+          - csrf ensures that the request came from your website not from another fake website ( not optional )
+          - use both client & server validation :  client reduces requests to server but it's overridable 
 
-        ** patterns MVC  ( database , UI , connector )
+       * payment
+          - stripe
+          - braintree & paypal
+          - "paysky" OR "paymob" OR "fawrypay"
 
-      </span>
+       * patterns MVC  ( database , UI , connector )
+
 
       ### notes
-      <span>
-        ** template engine  ( server html --- easy & fast & beautiful syntax --- shortcuts & less lines -- layout inheritance & less repeats)
-      </span>
+        # template engine  
+          * server html
+          * easy & fast & beautiful syntax 
+          * shortcuts & less lines
+          * layout inheritance & less repeats
 
     </pre>`}
     </>

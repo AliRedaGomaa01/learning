@@ -2,65 +2,66 @@ export default function Express() {
   return (
     <div>
       <pre>
+{`
+        # some info
 
-        ### some info
-
-        <span>
           * Npm package manager of node
           * node is server side js runner and also nodemon
           * express is a node web server with prepared ( many functions , tools , and rules )
-          * sending email is after configuring email serverw
-        </span>
+          * sending email is after configuring email server
+        
 
-        ### terminal cmds
+        # terminal cmds
 
-        <span>
+        
           * npm install {"<package>"}
           * npm init {"== >>>"} start node project
           * node app.js {"== >>>"} run file as build
           * nodemon app.js  {"== >>>"} run file as dev & listen to file changes
-        </span>
+        
 
-        ### env & app defineConfig
-        <span>
+        # env & app defineConfig
+        
           * app.set('view engine' , 'ejs')
-        </span>
+        
 
-        ### dependencies
-        <span>
+        # dependencies
+        
           * use --save with development & production dependencies  ( default )
           &nbsp; &nbsp; but use --save-dev for development dependencies
-        </span>
+        
 
-        ###  packages  ( almost every thing is via package )
-        <span>
+        #  packages  ( almost every thing is via package )
+        
           * express
           * nodemon
           * body-parser
-        </span>
+        
 
-        ### routing
+        # routing
 
-        <span>
+        
           * using “use( “/” , {"() => "}  ) “  represent fallback for all paths , but if use get method if specify
           * in linux file paths is “folder/file” but in windows “folder\file”  SO we use sendFile( path.join( __dirname , “folder” , “file” ) )
           {"// dirname is path of current file"}
           {"// and you can make rootpath.js in util folder to give you path of root file"}
-        </span>
+        
 
-        ### app structure
-        <span>
+        # app structure
+        
           **  public folder {"=>"} for assets which is accessible by users ( css , js , imgs )
           &nbsp; &nbsp; to access files in public we must use {/* =>> */} express.static( ) function
-        </span>
+        
 
-        ### views
-        <span>
+        # views
+        
           **  express template engines are ( EJS --- pug --- handlebars  )
-          <span>
+          
             **** they are used as external packages and have their own docs
-          </span>
-        </span>
+          
+        
+        
+        `}
 
       </pre>
 

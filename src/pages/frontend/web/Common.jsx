@@ -3,6 +3,7 @@ export default function Common() {
     <pre>
 {`      # basic info :
           * most FE frameworks uses CLI 
+          * async http request ( Ajax )
           * component life cycle  ( we must destroy continuous tasks before component is destroyed)
           * slots 
           * state :
