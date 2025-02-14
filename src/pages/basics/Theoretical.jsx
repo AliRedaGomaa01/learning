@@ -2,6 +2,7 @@ let Theoretical = () => (
   <pre>
 {`    
     ### important info
+
       # framework VS library
         ** framework has enough builtin tools for development basics but in libraries you must need 3rd parties
           *** some frameworks has more than tool to make the same thing ||| also make detailed tools foreash simple or complex feature
@@ -14,7 +15,7 @@ let Theoretical = () => (
       
       # the importance of states is the reload of specific parts not whole the page 
 
-    ### important topics
+
     `}
   </pre>
 )

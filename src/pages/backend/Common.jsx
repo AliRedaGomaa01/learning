@@ -48,9 +48,12 @@ export default function Common() {
           - use both client & server validation :  client reduces requests to server but it's overridable 
 
        * payment
-          - stripe
+          - stripe ( search stripe payments docs )
           - braintree & paypal
           - "paysky" OR "paymob" OR "fawrypay"
+          - steps of payment after checkout
+            * collect payment method ---- then verify it
+            * charge amount from method ---- then manage payments in database 
 
        * patterns MVC  ( database , UI , connector )
 

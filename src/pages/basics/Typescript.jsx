@@ -11,7 +11,7 @@ export default function Typescript() {
           - return type & params type hints on define 
         * myVar?: ReturnType<typeof anyObject>;  
           - gets the type of this object that will be assigned later to this variable
-      
+        * @ClassType{  } Class ClassName {}
       `} 
     </>
   )
