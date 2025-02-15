@@ -15,7 +15,10 @@ export default function Common() {
 
         # API 
           * might be for mobile app OR S. P. web app OR service
-          * Stateless => server not store any data about user in session or cache 
+          * Stateless => 
+            - requests without storing in => session or cache  or cookie
+            - data in request & response are in json  
+          * use CSRF for fullstack app &&&&&&&&&&& use CORS for RESTfull app to control frontend request's ( domain - method - headers) 
 
         # Files Handling 
           * form files & storage -- pdf -- excel 
