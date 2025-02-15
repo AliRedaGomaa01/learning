@@ -25,7 +25,12 @@ export default function Angular() {
           * we can use (( two way binding )) OR (( refs )) OR OOP to update from input values 
           * RxJs library & observables => subscribe & listen to streams of data update synchronously  Ex. interval() of count increment
             - we must unsubscribe from any subscription on destroying the component  
-          * other forms data handling approach => ReactiveFormModule & FormGroup & FormControl & Validators
+          * other forms data handling approach => 
+            - ReactiveFormModule 
+              + FormGroup for forms 
+              + FormArray for checkbox inputs 
+              + FormControl 
+              + Validators
         
         # performance 
           * onPush component => rerendered only when its inputs change NOT with every parent update

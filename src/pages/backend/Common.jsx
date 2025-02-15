@@ -6,18 +6,24 @@ export default function Common() {
 
        * Huge data quantity not affect as text but as UI rendering
        * html structure multiply responded arrays' size
-
+       * 
+        
+      
       ### basics topics
 
         # schedule code & commands
+
+        # API 
+          * might be for mobile app OR S. P. web app OR service
+          * Stateless => server not store any data about user in session or cache 
 
         # Files Handling 
           * form files & storage -- pdf -- excel 
           * project's file-path handling  ( public - views - storage )
 
-        #  cookies && sessions && cache
+        #  Cookies && Sessions && Cache
 
-         * cookies 
+         * Cookies 
             -  stored on browser 
             - handled by requests & responses 
          * sessions
