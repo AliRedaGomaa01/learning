@@ -6,7 +6,6 @@ export default function Common() {
 
        * Huge data quantity not affect as text but as UI rendering
        * html structure multiply responded arrays' size
-       * 
         
       
       ### basics topics
@@ -22,7 +21,10 @@ export default function Common() {
           * Stateless => 
             - requests without storing in => session or cache  or cookie
             - data in request & response are in json  
-          * use CSRF for fullstack app &&&&&&&&&&& use CORS for RESTfull app to control frontend request's ( domain - method - headers) 
+          * use CSRF for fullstack app &&&&&&&&&&& use CORS for RESTfull app to control frontend request's ( domain - method - headers)
+          * jwt 
+            - sign unique data for each use Ex ( email , id ) 
+            -  we can decode them and use them using our custom-secret-key to verify the data 
 
         # Files Handling 
           * form files & storage -- pdf -- excel 

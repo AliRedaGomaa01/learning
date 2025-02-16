@@ -35,6 +35,7 @@ export default function Angular() {
         
         # performance 
           * onPush component => rerendered only when its inputs change NOT with every parent update
+          * stand alone => imports only needed components *** BUT *** Modules import all components 
 
         # commands
           * ng g c folder/component-name 
