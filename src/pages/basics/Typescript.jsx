@@ -7,6 +7,7 @@ export default function Typescript() {
       # in typescript we can implement interfaces
       
       # define types
+        * const myVar : string = "myVal";
         * myFnCall<{ name!: 'Ali'|'Ahmed'|'Mohamed' , age?: number }[] | undefined>( myArr )  
           - parameter variable type validation on call 
         * myFnDef( par1: string , par2 : any ) : returnType { fnBody } 
