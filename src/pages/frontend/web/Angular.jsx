@@ -13,6 +13,7 @@ export default function Angular() {
           * there are many ways to inject services  USING provider ( to the root ---- to the component element ---- others) 
           * not using axios for http requests and use builtin HttpClient that returns Observable Stream 
           * it has own form validator system using FormControl & Validators
+          * deferring component to be rendered when it's on viewport Ex. flash sale timer  
           
         # views 
           * stand alone component & imports for each one  VS modules & global import
@@ -37,6 +38,9 @@ export default function Angular() {
 
         # commands
           * ng g c folder/component-name 
+
+        # building & deployment 
+          * can be built as  ( SSR app --  SPA ( CSR ) -- SSG static site generation  )   
       `}
     </pre>
   );

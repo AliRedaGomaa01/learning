@@ -1,10 +1,9 @@
 export default function Web() {
   return (
     <pre>
-      ### important info 
-      <span>
-        
-      </span>
+      {`
+        # free host for static websites ( no DB - no server logic )  => ( github pages - w3school - firebase google )
+      `}
     </pre>
   );
 }

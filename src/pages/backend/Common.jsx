@@ -13,6 +13,10 @@ export default function Common() {
 
         # schedule code & commands
 
+        # performance 
+          * lazy loading of data
+          * type hint
+
         # API 
           * might be for mobile app OR S. P. web app OR service
           * Stateless => 
