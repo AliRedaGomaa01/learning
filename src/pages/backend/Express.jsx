@@ -12,7 +12,6 @@ export default function Express() {
         
 
         # terminal cmds
-
         
           * npm install {"<package>"}
           * npm init {"== >>>"} start node project
@@ -39,7 +38,6 @@ export default function Express() {
         
 
         # routing
-
         
           * using “use( “/” , {"() => "}  ) “  represent fallback for all paths , but if use get method if specify
           * in linux file paths is “folder/file” but in windows “folder\file”  SO we use sendFile( path.join( __dirname , “folder” , “file” ) )
@@ -65,9 +63,11 @@ export default function Express() {
         # graphQL ( package used with many languages not only js )
           * a pattern to make API like MVC
           * stateless api with higher priority flexibility
+          * uses schema ( for routing )  && resolvers ( for controllers )
           * uses one endpoint with POST method for the data ( detect responses from request body )
           * typed language  
             - operation types ( Query for GET method - Mutation for other methods - subscription for websocket connections  )
+          * can be tested using postman or using a feature in it enable graphical GUI like docs for your api 
         `}
 
       </pre>

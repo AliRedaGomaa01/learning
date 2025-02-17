@@ -11,6 +11,9 @@ let HtmlCss = () => (
             - pseudo 
               ** classes 
               ** elements  
+          
+        # outline-offset => space between border & outline
+        # box model => element default box is ( border + padding + dimensions ) 
 
         # styling tips 
           * consider dark mode styling
