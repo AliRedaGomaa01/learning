@@ -61,12 +61,14 @@ export default function Express() {
           * use socket.io package on client & server sides      
 
         # graphQL ( package used with many languages not only js )
-          * a pattern to make API like MVC
+          * a special pattern to make API like MVC 
+          * default use is to handle json data only ( not files )
+            - save the image first on server then the user uses the image url
           * stateless api with higher priority flexibility
           * uses schema ( for routing )  && resolvers ( for controllers )
           * uses one endpoint with POST method for the data ( detect responses from request body )
           * typed language  
-            - operation types ( Query for GET method - Mutation for other methods - subscription for websocket connections  )
+            - operation types ( Query for GET method & database getting - Mutation for other methods & database editing - subscription for websocket connections  )
           * can be tested using postman or using a feature in it enable graphical GUI like docs for your api 
         `}
 

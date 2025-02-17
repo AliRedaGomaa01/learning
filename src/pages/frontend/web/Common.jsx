@@ -7,8 +7,10 @@ export default function Common() {
         * async http request ( Ajax )
         * component life cycle  ( we must destroy continuous tasks before component is destroyed)
         * lazy loading ( route path component - assets  )
+        * parent fragment is preferred
         * interactive immediately response 
         * reactive live without reloading with state => using js proxies
+        * Teleporting => changing component rendering place in the DOM
         * SPA rendered in one app root in one basic file
           - uses virtual DOM & small components that updates only specific pieces of code not whole the dom
           - to override SPA SEO problems you can use ((( perfect SEO land page with subdomain &&& use digital marketing ))) 
