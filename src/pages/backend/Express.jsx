@@ -59,8 +59,15 @@ export default function Express() {
           
             **** they are used as external packages and have their own docs
           
-        
-        
+        # websocket => establish a listening channel for server updates
+          * use socket.io package on client & server sides      
+
+        # graphQL ( package used with many languages not only js )
+          * a pattern to make API like MVC
+          * stateless api with higher priority flexibility
+          * uses one endpoint with POST method for the data ( detect responses from request body )
+          * typed language  
+            - operation types ( Query for GET method - Mutation for other methods - subscription for websocket connections  )
         `}
 
       </pre>

@@ -19,9 +19,12 @@ export default function Angular() {
           * stand alone component & imports for each one  VS modules & global import
           
         # state  & properties
+          * in previous angular was managing state using OOP  *** BUT *** signals make it better performance & less code 
           * uses events to pass data to parent 
           * uses ( Inputs with signal && output with event ) to handle components data sharing
           * signals is two way binding local state  [ mySignal() ** mySignal.set() ** mySignal().update( prev => prev + 1 ) ]
+            - ( set - update )  methods
+            - constructor() { effect( _ => console.log( mySignal() ))} // watch signal value and execute code onchange
           * template variable is like a ref  used inside template to catch element
           * we can use (( two way binding )) OR (( refs )) OR OOP to update from input values 
           * RxJs library & observables => subscribe & listen to streams of data update synchronously  Ex. interval() of count increment
@@ -32,10 +35,12 @@ export default function Angular() {
               + FormArray for checkbox inputs 
               + FormControl 
               + Validators
+          * NgRx for global state management system like Redux
         
         # performance 
           * onPush component => rerendered only when its inputs change NOT with every parent update
-          * stand alone => imports only needed components *** BUT *** Modules import all components 
+          * Stand alone => imports only every needed components & providers & dependency for itself *** BUT *** Modules import all components with centralized import for providers
+          * The module is a group of components   *** AND ***  stand alone component  can be used in modules except the root component
 
         # commands
           * ng g c folder/component-name 
