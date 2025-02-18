@@ -19,7 +19,20 @@ let HtmlCss = () => (
           * consider dark mode styling
           * use color variables for whole app
           * prepared templates save a lot of time  
+          * 
+          * 
           
+        # property notes
+          * text-shadow  &&& box-shadow
+
+
+
+        # theme template 
+          * https://envato.com 
+          * https://themeforest.net/
+          * https://www.canva.com/
+          * https://creativemarket.com/
+          * https://www.templatemonster.com/
       `}
   </pre>
 )

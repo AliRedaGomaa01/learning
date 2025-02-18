@@ -9,7 +9,6 @@ export default function Express() {
           * node is server side js runner and also nodemon
           * express is a node web server with prepared ( many functions , tools , and rules )
           * sending email is after configuring email server
-        
 
         # terminal cmds
         
@@ -62,6 +61,7 @@ export default function Express() {
 
         # graphQL ( package used with many languages not only js )
           * a special pattern to make API like MVC 
+          * frontend developer can customize returned response ( full query language for client ) 
           * default use is to handle json data only ( not files )
             - save the image first on server then the user uses the image url
           * stateless api with higher priority flexibility
@@ -70,6 +70,21 @@ export default function Express() {
           * typed language  
             - operation types ( Query for GET method & database getting - Mutation for other methods & database editing - subscription for websocket connections  )
           * can be tested using postman or using a feature in it enable graphical GUI like docs for your api 
+
+
+          # Deployment Notes 
+            $ detect your node version in package.json using "engine" keyword
+            $ packages ( for hosting provides without service management )
+              * helmet package to add security headers to your response 
+              * compression to reduce size of assets ( css , js , imgs )  in response 
+              * morgan to make logging for server requests
+              * search for manually apply SSL certificate on your app
+          
+          # suggested hosting providers :
+            * heroku
+            * digitalocean
+            * aws
+            * vercel
         `}
 
       </pre>
