@@ -24,6 +24,14 @@ export default function Common() {
         * common folder names :
           - util 
 
+
+      # auth : 
+        * store bearer token in localstorage and use it in every auth request header 
+        * token expiration duration
+
+      # Deployment  : 
+        * client side rendering : always redirect all paths to index.html  in build folder  
+
       # debugging :
         * browser extension  ex. angular debug 
         * debug mode from source tab in inspect mode and choose line to stop at
