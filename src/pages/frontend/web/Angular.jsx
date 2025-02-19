@@ -14,6 +14,7 @@ export default function Angular() {
           * not using axios for http requests and use builtin HttpClient that returns Observable Stream 
           * it has own form validator system using FormControl & Validators
           * deferring component to be rendered when it's on viewport Ex. flash sale timer  
+          * we can cache assets & urls from angular config file 
           
         # views 
           * stand alone component & imports for each one  VS modules & global import
