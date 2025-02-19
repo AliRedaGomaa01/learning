@@ -12,6 +12,9 @@ export default function Common() {
 
         # schedule code & commands
 
+        # terminal :
+          * install anyPkg@version
+
         # performance 
           * lazy loading of data
           * type hint
@@ -33,12 +36,12 @@ export default function Common() {
         #  Cookies && Sessions && Cache
 
          * Cookies 
-            -  stored on browser 
+            - stored on browser 
             - handled by requests & responses 
          * sessions
             - it's unique foreach authenticated user
             - usually stored in database && and at the same time has cookie on browser
-            - uses 3rd package => express-session
+            - Node uses 3rd package => express-session
             - used to handle sensitive data like auth & user
 
        * Routing
@@ -72,6 +75,7 @@ export default function Common() {
 
        * patterns MVC  ( database , UI , connector )
 
+      * automated testing => test code using code  
 
       ### notes
         # template engine  

@@ -11,6 +11,8 @@ export default function Common() {
         * interactive immediately response 
         * reactive live without reloading with state => using js proxies
         * Teleporting => changing component rendering place in the DOM
+        * the build process convert the code ( minify - work on all browsers - more secure )
+          - build tools ( webpack ex. react-scripts  ***  vite )
         * SPA rendered in one app root in one basic file
           - uses virtual DOM & small components that updates only specific pieces of code not whole the dom
           - to override SPA SEO problems you can use ((( perfect SEO land page with subdomain &&& use digital marketing ))) 

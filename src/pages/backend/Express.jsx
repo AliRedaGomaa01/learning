@@ -9,6 +9,7 @@ export default function Express() {
           * node is server side js runner and also nodemon
           * express is a node web server with prepared ( many functions , tools , and rules )
           * sending email is after configuring email server
+          * use exports.key & require *** OR *** make app type => "module" in package.json  and use import & export  
 
         # terminal cmds
         
