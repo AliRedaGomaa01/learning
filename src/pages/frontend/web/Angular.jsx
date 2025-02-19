@@ -35,7 +35,9 @@ export default function Angular() {
               + FormArray for checkbox inputs 
               + FormControl 
               + Validators
-          * NgRx for global state management system like Redux
+          * NgRx for global state management system like Redux 
+            - reducers to handle actions & change state 
+            - effects as events on state changes
         
         # performance 
           * onPush component => rerendered only when its inputs change NOT with every parent update
