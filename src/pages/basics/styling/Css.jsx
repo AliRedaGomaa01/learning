@@ -1,4 +1,4 @@
-let HtmlCss = () => (
+let Css = () => (
   <pre>
       {`
 
@@ -17,7 +17,7 @@ let HtmlCss = () => (
             - pseudo 
               ** classes 
               ** elements  
-          
+
         # outline-offset => space between border & outline
         # box model => element default box is ( border + padding + dimensions ) 
         
@@ -36,7 +36,9 @@ let HtmlCss = () => (
         # property notes
           * text-shadow  &&& box-shadow
 
-        # theme template 
+        # theme template & good designs & inspire 
+          * live websites & competitors
+          * behance – dribble – printerest 
           * https://www.w3schools.com/w3css/w3css_templates.asp
           * https://envato.com 
           * https://themeforest.net/

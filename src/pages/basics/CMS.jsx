@@ -28,7 +28,6 @@ let CMS = () => (
       * download - paste in xxamp and rename - make new database - ( localhost/folder )
       * different name ( pages => views  & categories => taxonomies … )
 
-
     # shopify : 
       stopped in minute 30 at first video
       https://www.youtube.com/watch?v=ICFXS5WIS3Y
