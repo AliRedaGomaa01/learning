@@ -35,6 +35,14 @@ let Css = () => (
 
         # property notes
           * text-shadow  &&& box-shadow
+          * cursor
+          * list-style-image: url('sqpurple.gif');
+
+        # icons : 
+          - <i> OR <svg>
+          - fontawesome
+          - bootstrap icons 
+          - google icons
 
         # theme template & good designs & inspire 
           * live websites & competitors
