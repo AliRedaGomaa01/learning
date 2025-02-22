@@ -4,8 +4,9 @@ export default function Common() {
       {`    
       ### basics info
 
-       * Huge data quantity not affect as text but as UI rendering
-       * html structure multiply responded arrays' size
+        * backend used when we need database  ( Ex dynamic websites )  
+        * Huge data quantity not affect as text but as UI rendering
+        * html structure multiply responded arrays' size
         
       
       ### basics topics

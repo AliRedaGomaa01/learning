@@ -42,6 +42,7 @@ let Css = () => (
           * text-shadow  &&& box-shadow
           * cursor
           * list-style-image: url('sqpurple.gif');
+          * max & min width to adapt layout overflow
 
         # icons : 
           - <i> OR <svg>

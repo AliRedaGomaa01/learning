@@ -4,6 +4,7 @@ let WebBasicsAndHtml = () => (
       # we must set unique meta tags & title for each path
       # client logic is light than server logic &&&&& make it separated from html code  
       # action when element is on viewport ( seen )
+      # protocol://domainName-OR-ip:port/resource /* https port 443 */
       # inspect tool has very powerful options  
         - offline service worker in networks tab 
         - slow speed connection  
