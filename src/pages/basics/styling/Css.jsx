@@ -15,8 +15,13 @@ let Css = () => (
             - attribute 
             - combinator ( group  ) 
             - pseudo 
-              ** classes 
-              ** elements  
+              $ classes 
+              $ elements  
+        
+        # Notes
+          *  tr:nth-child(even) {background-color: #f2f2f2;} // for siblings only 
+            - BUT tr:nth-type(even) {background-color: #f2f2f2;} // for whole document
+
 
         # outline-offset => space between border & outline
         # box model => element default box is ( border + padding + dimensions ) 
