@@ -4,9 +4,15 @@ export default function Common() {
       {`    
       ### basics info
 
-        * backend used when we need database  ( Ex dynamic websites )  
+        * backend used when we 
+          - need a database ( Ex dynamic websites )  
+          - integrate secret 3rd apis 
+          - implement complex secret logic
         * Huge data quantity not affect as text but as UI rendering
         * html structure multiply responded arrays' size
+        * we must use 
+          - env variables for values changes based on environment & secret values
+          - logging for http requests ( ex. morgan in express ) 
         
       
       ### basics topics
