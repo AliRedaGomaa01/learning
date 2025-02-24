@@ -21,10 +21,24 @@ let Css = () => (
         # Notes
           *  tr:nth-child(even) {background-color: #f2f2f2;} // for siblings only 
             - BUT tr:nth-type(even) {background-color: #f2f2f2;} // for whole document
-
-        # outline-offset => space between border & outline
-        # box model => element default box is ( border + padding + dimensions ) 
+          * outline-offset => space between border & outline
+          * box model => element default box is ( border + padding + dimensions ) 
+          * layout manipulate using 
+            $ margin auto
+            $ dir 
+            $ position 
+            $ inline-block 
+            $ float 
+            $ flex 
+            $ grid 
         
+        # property notes
+          * text-shadow  &&& box-shadow
+          * cursor
+          * list-style-image: url('sqpurple.gif');
+          * max & min width to adapt layout overflow
+          * overflow-wrap => for long words
+          
         # fonts : 
           * font: italic small-caps bold 12px/30px Georgia, serif; /* font-size/line-height */
           * use 2 fonts from two families not only one 
@@ -36,13 +50,6 @@ let Css = () => (
               $ ubuntu  
               $ cinzel
               $ spectral
-
-        # property notes
-          * text-shadow  &&& box-shadow
-          * cursor
-          * list-style-image: url('sqpurple.gif');
-          * max & min width to adapt layout overflow
-          * overflow-wrap => for long words
 
         # icons : 
           * <i> OR <svg>
@@ -59,6 +66,21 @@ let Css = () => (
           * https://www.canva.com/
           * https://creativemarket.com/
           * https://www.templatemonster.com/
+          
+        # examples
+          *  .center {
+                height: 200px;
+                position: relative;
+                border: 3px solid green;
+              }
+
+              .center p {
+                margin: 0;
+                position: absolute;
+                top: 50%; // 50% of its parent container 
+                left: 50%;
+                transform: translate(-50%, -50%); // 50% of its dimensions
+              }
       `}
   </pre>
 )
