@@ -1,51 +1,39 @@
 export default function Common() {
   return (
     <pre>
-      ### basic info :
-      <span>
-        ** In Backend I can work with Firebase Or local Sqlite  Or remote web server
-        ** In cross platform we depend on prepared tools that fit IOS & Android &&& a custom combination of these tools
-      </span>
+{`
+      # basic info :
+        * In Backend I can work with Firebase Or local Sqlite  Or remote web server
+        * In cross platform we depend on prepared tools that fit IOS & Android &&& a custom combination of these tools
 
-      ### basic topics :
-      <span>
+      # notes :
+        * Vysor for mirroring mobile screen on pc
 
-      </span>
 
-      ### running code :
-      <span>
-        ** we can use Android Emulator ( android studio ) OR IOS simulator ( Mac & Xcode mobile app )
-      </span>
+      # running code :
+        * we can use Android Emulator ( android studio ) OR IOS simulator ( Mac & Xcode mobile app )
 
-      ### Routing & Navigation :
-      <span>
-        ** we can navigate using Global State
-        ** stack means push to front
-      </span>
+      # Routing & Navigation :
+        * we can navigate using Global State
+        * stack means push to front
 
-      ### FCM
-      <span>
-        ** FCM stands for Firebase Cloud Messaging,   used for pushing updates
-        <span>
-          ** use get for normal fetch and Future type response
-          ** but use listen & snapshot for realtime to get Stream type response ( queue of Future )
-        </span>
-      </span>
+      # FCM
+        * FCM stands for Firebase Cloud Messaging,   used for pushing updates
+          - use get for normal fetch and Future type response
+          - but use listen & snapshot for realtime to get Stream type response ( queue of Future )
 
-      ### notifications
-      <span>
-        ** we can use flutter_local_notifications use firebase_messaging for sending notifications
-        ** we can notify specific user using firebase_messaging & firebase console and this action responses are
-        ** we can response in background while app is closed
-      </span>
+      # notifications
+        * we can use flutter_local_notifications use firebase_messaging for sending notifications
+        * we can notify specific user using firebase_messaging & firebase console and this action responses are
+        * we can response in background while app is closed
 
-      ### native device features ( camera , gps , ... )
+      # native device features ( camera , gps , ... )
 
-      ### platforms: 
-      <span>
-        ** integrate native code into cross-platform app
-        ** can write specific code for each platform
-      </span>
+      # platforms: 
+        * integrate native code into cross-platform app
+        * can write specific code for each platform
+`}
+
     </pre>
   );
 }

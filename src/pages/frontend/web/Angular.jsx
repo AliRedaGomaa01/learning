@@ -4,6 +4,7 @@ export default function Angular() {
 {`      
         # basics
           * angular is perfect for many options and high performance
+          * angular material is a pre-made components ( forms , icons ), ready for direct use   ( widely used )
           * uses ( services - models - interfaces - dependency injection )
           * uses pipes to filter OR format OR transform variable data like : ex.  price | number:1.1-2 | currency:EUR 
             - every filter has documentation
@@ -15,7 +16,6 @@ export default function Angular() {
           * it has own form validator system using FormControl & Validators
           * deferring component to be rendered when it's on viewport Ex. flash sale timer  
           * we can cache assets & urls from angular config file
-          * angular material is a pre-made components, ready for direct use  
           * angular schematics ( ng add ... - ng generate ... - ng update ...  )
           * angular builders ( ng build - ng test - ng lint - ng deploy  )
           

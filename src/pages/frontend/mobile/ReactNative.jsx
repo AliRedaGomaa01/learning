@@ -1,100 +1,99 @@
 export default function ReactNative() {
   return (
     <pre>
-      ### basic info :
-      <span>
-        ** depends on React jsx & flex box
-        ** uses js bridge before compiling
-        ** see docs to start new app
-        ** we can use with Expo OR with React CLI
-        ** You must see your work on both IOS And Android because of different execution
-        ** rely on component api
-      </span>
+      {`
+      
+      # basic info :
+        * depends on React jsx & flex box
+        * uses js bridge before compiling
+        * see docs to start new app
+        * we can use with Expo OR with React CLI
+        * You must see your work on both IOS And Android because of different execution
+        * rely on component api
 
-      ### basic topics :
-      <span>
+      # basic topics :
 
-      </span>
 
-      ### styling :
-      <span>
-        ** not inheriting cascading
-        ** not scrollable and pressable by default
-        ** rely on flex
-        ** fonts : expo install expo-front
-        ** statusbar ( notification bar ) : light & dark
-        ** loading spinner :  {"<ActivityIndicator >"}
-        ** icons : expo vector icons & IonIcons
-      </span>
+      # styling :
+        * not inheriting cascading
+        * not scrollable and pressable by default
+        * rely on flex
+        * fonts : expo install expo-front
+        * statusbar ( notification bar ) : light & dark
+        * loading spinner :  {"<ActivityIndicator >"}
+        * icons : expo vector icons & IonIcons
+        * useLayoutEffect use sometimes instead of useEffect to prevent layout refresh
+        * Dimensions API  
+          - ( window “ excluding statusbar “ )  &&& use it with state for ( orientation )  
+          - screen orientation ⇒   useWindowDimenstions( )  , keyboardAvoidingView  , separate component part foreach width
+          
 
-      ### platform :
-      <span>
-        ** pressable : android ripple effect ( hover opacity ) & IOS (  style callback func )
-        ** android Elevation && ios shadow
-      </span>
+      # platform :
+        * pressable : android ripple effect ( hover opacity ) & IOS (  style callback func )
+        * android Elevation && ios shadow
 
-      ### running code on mobile :
-      <span>
-        ** we can run using expo go mobile app
-      </span>
+      # running code on mobile :
+        * we can run using expo go mobile app
 
-      ### packages :
-      <span>
-        ** react dev tools
-      </span>
+      # packages :
+        * react dev tools
 
-      ### basic components :
-      <span>
-        ** StyleSheet
-        ** ScrollView & View
-        ** Text
-        ** InputText
-        ** Image
-        ** Button
-        ** FlatList ( lazy loading [ render seen only ] --- scrollable )
-        ** Platform.OS
-        ** notes :
-        <span>
-          ** can't use View  inside Text but use Text inside Text
-        </span>
-      </span>
+      # Navigation =>  
+        - react navigation docs 
+        - no url but buttons && push to front 
+        - Stack OR Drawer OR Tabs 
+        - Nested Navigator  
+        - drawers & tabs 
+        - options ( title & headerStyle ) & screenOptions ( all screens ) && setOptions ( inside screen  ) 
+        - navigation props 
+        - dynamic route     
+        - useNavigation( ).replace( 'screenName' )
 
-      ### native features :
-      <span>
-        ** native mobile feature ( camera , location , device storage  )
-        ** expo-camera expo-location expo-xyz ( more advanced feature )
-        **  you can gain permission of each platform before
+      # basic components :
+        * StyleSheet
+        * ScrollView & View
+        * Text
+        * InputText
+        * Image
+        * Button
+        * FlatList ( lazy loading [ render seen only ] --- scrollable )
+        * Platform.OS
+        * notes :
+          - can't use View  inside Text but use Text inside Text
 
-        ** location
-        <span>
-          -- make it as UI code "show map" & UX code "get info"
-          -- expo-location package
-          -- getCurrentPositionAsync()
-          -- useForegroundPermission()
-          -- get map image for latitude & longitude from google console
-          -- expo install react-native-map  for pick a place from map
-          -- google map geocode to get human readable address
-        </span>
+      # native features :
+        * native mobile feature ( camera , location , device storage  )
+        * expo-camera expo-location expo-xyz ( more advanced feature )
+        *  you can gain permission of each platform before
 
-        ** storage :
-        <span>
-          -- expo-SQLite package {/* ---> */} for local Database
-          -- react native asyncStorage {/* ---> */} for cached
-        </span>
+        * location
+          - make it as UI code "show map" & UX code "get info"
+          - expo-location package
+          - getCurrentPositionAsync()
+          - useForegroundPermission()
+          - get map image for latitude & longitude from google console
+          - expo install react-native-map  for pick a place from map
+          - google map geocode to get human readable address
 
-        ** notification
-        <span>
-          -- expo notification  &&& setNotificationHandler( )  &&& scheduleNotificationAsync( )
-          -- local on device or push on push server
-        </span>
-      </span>
+        * storage :
+          - expo-SQLite package => for local Database
+          - react native asyncStorage => for cached
 
-      ### folders & structure :
-      <span>
-        ** screens
-        ** components/ui
-        ** constants to manage colors
-      </span>
+        * camera images 
+          - expo-image-picker package  
+          - launchCameraAsync({ quality:0.5 , aspect: [ 16:9 ] , allowsEditing : true  })  
+          - useCameraPermissions() 
+          - PermissionStatus.UNDETERMINED
+
+        * notification
+          - expo notification  &&& setNotificationHandler( )  &&& scheduleNotificationAsync( )
+          - local on device or push on push server
+
+      # folders & structure :
+        * screens
+        * components/ui
+        * constants to manage colors
+      `}
 
     </pre>
   );

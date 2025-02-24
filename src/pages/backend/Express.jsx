@@ -10,7 +10,14 @@ export default function Express() {
           * express is a node web server with prepared ( many functions , tools , and rules )
           * sending email is after configuring email server
           * use exports.key & require *** OR *** make app type => "module" in package.json  and use import & export  
-
+          
+        # error handling
+        
+          * global error   app.use((err, req, res , next) => { res.status(404).json({ err });})
+          * global not found  app.all( "*" , (req, res, next) => { const err = new Error (" msg " ) ; next(err.message); }) 
+          * disable errors on production mode 
+          * handling app exceptions =>  process.on('UnhandledRejection' , () => {} )  // to listen on errors like database connection 
+        
         # terminal cmds
         
           * npm install {"<package>"}
@@ -46,15 +53,14 @@ export default function Express() {
 
         # app structure
         
-          **  public folder {"=>"} for assets which is accessible by users ( css , js , imgs )
-          &nbsp; &nbsp; to access files in public we must use {/* =>> */} express.static( ) function
+          *  public folder {"=>"} for assets which is accessible by users ( css , js , imgs )
+              -  to access files in public we must use {/* =>> */} express.static( ) function
         
 
         # views
         
-          **  express template engines are ( EJS --- pug --- handlebars  )
-          
-            **** they are used as external packages and have their own docs
+          *  express template engines are ( EJS --- pug --- handlebars  )
+            - they are used as external packages and have their own docs
           
         # websocket => establish a listening channel for server updates
           * use socket.io package on client & server sides      

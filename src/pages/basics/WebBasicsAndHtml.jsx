@@ -13,7 +13,10 @@ let WebBasicsAndHtml = () => (
         - <img src="image.jpg" loading="lazy" alt="Description">
         - <dialog> &&& <progress> &&& <menu>
 
-      
+      # common between front & backend 
+        * routing
+        * auth handling 
+        * form validation  
   `}
   </>
 )

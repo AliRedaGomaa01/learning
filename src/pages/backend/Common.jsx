@@ -52,7 +52,7 @@ export default function Common() {
             - used to handle sensitive data like auth & user
 
        * Routing
-          - request ( url & header & body & method ) --- middleware --- server logic --- response ( status & header & body & method )
+          - request ( url & header & body & method ) --- middleware --- server logic && database --- response ( status & header & body & method )
           - dynamic paths & path parameters & filter routes by param types
           - Route prefix & Route name
           - grouping

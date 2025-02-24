@@ -22,7 +22,6 @@ let Css = () => (
           *  tr:nth-child(even) {background-color: #f2f2f2;} // for siblings only 
             - BUT tr:nth-type(even) {background-color: #f2f2f2;} // for whole document
 
-
         # outline-offset => space between border & outline
         # box model => element default box is ( border + padding + dimensions ) 
         
@@ -43,12 +42,13 @@ let Css = () => (
           * cursor
           * list-style-image: url('sqpurple.gif');
           * max & min width to adapt layout overflow
+          * overflow-wrap => for long words
 
         # icons : 
-          - <i> OR <svg>
-          - fontawesome
-          - bootstrap icons 
-          - google icons
+          * <i> OR <svg>
+          * fontawesome
+          * bootstrap icons 
+          * google icons
 
         # theme template & good designs & inspire 
           * live websites & competitors
