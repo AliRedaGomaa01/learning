@@ -29,7 +29,7 @@ export default function Angular() {
           * signals is two way binding local state  [ mySignal() ** mySignal.set() ** mySignal().update( prev => prev + 1 ) ]
             - ( set - update )  methods
             - constructor() { effect( _ => console.log( mySignal() ))} // watch signal value and execute code onchange
-          * template variable is like a ref  used inside template to catch element
+          * template variable is like a ref  used inside template to catch element  [[[ defined && called inside html file ]]]
           * we can use (( two way binding )) OR (( refs )) OR OOP to update from input values 
           * RxJs library & observables => subscribe & listen to streams of data update synchronously  Ex. interval() of count increment
             - we must unsubscribe from any subscription on destroying the component  
