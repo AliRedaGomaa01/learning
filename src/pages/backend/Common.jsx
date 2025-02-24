@@ -5,9 +5,10 @@ export default function Common() {
       ### basics info
 
         * backend used when we 
-          - need a database ( Ex dynamic websites )  
+          - need a database ( Ex dynamic websites reached from many devices  )  
           - integrate secret 3rd apis 
           - implement complex secret logic
+        * the best practice is to reduce request numbers & reduce response size
         * Huge data quantity not affect as text but as UI rendering
         * html structure multiply responded arrays' size
         * we must use 
@@ -31,7 +32,11 @@ export default function Common() {
           * Stateless => 
             - requests without storing in => session or cache  or cookie
             - data in request & response are in json  
-          * use CSRF for fullstack app &&&&&&&&&&& use CORS for RESTfull app to control frontend request's ( domain - method - headers)
+          * use CSRF for fullstack app 
+            - CORS is used 
+              $ when the front & the back are not on the same domain  
+              $ for RESTfull app to validate frontend request's ( domain - method - headers)
+              $ by setting headers to each response 
           * jwt 
             - sign unique data for each use Ex ( email , id ) 
             -  we can decode them and use them using our custom-secret-key to verify the data 
@@ -45,6 +50,7 @@ export default function Common() {
          * Cookies 
             - stored on browser 
             - handled by requests & responses 
+
          * sessions
             - it's unique foreach authenticated user
             - usually stored in database && and at the same time has cookie on browser
