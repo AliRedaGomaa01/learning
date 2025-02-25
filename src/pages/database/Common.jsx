@@ -21,6 +21,9 @@ export default function Common() {
         * vertical : more powerful one server  ( SQL & NoSQL )
         * horizontal : many low powerful servers ( NoSQL Only )
       
+      # firebase :
+        * firebase contains ( realtime notification FCM - sms messages - storage ) 
+        * 
       `}
 
     </pre>

@@ -22,6 +22,10 @@ export default function Flutter() {
         * Stateful widget => widget Class + state Class [  constructor + initState + setState   ] 
         * Use Form & formkey & Controller & Fields for validate & more features without stateful
         * there are controllers & global key for several widgets like  ( form - scaffold - page view )  
+        * to access properties passed to stateful widget we use widget.propName 
+        * split stateful part in the widget in a separate widget to prevent unnecessary reload
+        * stateful widget lifecycle => initState() , build() & setState() , dipose( ) 
+
 
       # start : 
         * install flutter SDK software development kit 
@@ -44,7 +48,7 @@ export default function Flutter() {
         * you should create model classes for custom data type ( Ex. Meal )  
         * int , double , String  , bool , List , Map , Enum , 
           - Widget , Function() , Object
-        * dynamic Vs var Vs final Vs const
+        * dynamic Vs var Vs final Vs const  ( typing - caching - redeclare - reassign )
         * bool myBool = myVar is int || myVar is! String
         * grand parent object 
           - 29 => int & num & Object
@@ -69,8 +73,50 @@ export default function Flutter() {
         * cascade ( make object and access it )  MyClass()..method() /* equals in php */ (new MyClass())->method()
 
       # packages : 
+        * external packages  => pub.dev website    /// pub package manager /// or search in google flutter packages
         * SQ F Lite => local database on mobile
         * official google font package
+        * shared_prefences => cache store 
+        * GlobalState  => Riverpod 3rd Package ***** or bloc && flutter_bloc packages (cubit)
+        * AJAX => pub http package OR pub Dio package
+        * open website frame -> web view package 
+        * swiper => PageView.builder()  && SmoothPageIndecator packages
+        * slider => carousel_slider package
+        * notify msg => flutter toast 
+        * firebase ( search in google flutterfire ) => firebase_core package
+        * responsive_builder
+        * pub Location package  ,,,, Google maps API  ,,, Google Geocoding API
+        * Pub image_picker  package 
+
+
+      # performance :
+        * use const to cache every thing  Ex. static widget  
+
+      ****************************************************************************************
+
+      ******************************
+      ########  Examples ###########
+      ******************************
+        * Json => json.encode() &&  json.decode()
+        * type coercion => int.tryParse(‘1’)
+        * console logging  => print() 
+        
+        * dart oop :  
+
+          class MyClass extends ParentClass  { 
+          	final String myProp ;
+          	static final String myProp2;
+          	MyClass ( { this.myProp , parentProp } ) : super( parentProp )
+
+          @override 
+          void parentMethod ( string para1 ) {
+          super.parentMethod(string para1)
+          // code
+          }
+        } 
+
+        ************************************************************************************************
+
 
 `}
 
