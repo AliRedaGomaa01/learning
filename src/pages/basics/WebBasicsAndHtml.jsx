@@ -17,10 +17,7 @@ let WebBasicsAndHtml = () => (
         * routing
         * auth handling 
         * form validation  
-         
-      # OOP : 
-        * abstract class ( extended class only ) => can't take object instance from it 
- 
+
   `}
   </>
 )
