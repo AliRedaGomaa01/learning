@@ -5,6 +5,8 @@ export default function Common() {
       # basic info :
         * In Backend I can work with Firebase Or local Sqlite  Or remote web server
         * In cross platform we depend on prepared tools that fit IOS & Android &&& a custom combination of these tools
+        * onboarding screen => contains swiper for users who use app for the first time & usually contains instruction and illustrations
+
 
       # notes :
         * Vysor for mirroring mobile screen on pc
