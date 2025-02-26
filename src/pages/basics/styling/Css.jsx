@@ -7,6 +7,8 @@ let Css = () => (
           * use color variables for whole app
           * prepared templates save a lot of time  
           * NO WEBSITE PAGE WITHOUT ICONS 
+          * RGBA => opacity for background color only 
+            - but opacity for element & its content   
 
         # basics
           * cascading ( [apply the inline then the last then default] & inherit from parent )
@@ -18,14 +20,17 @@ let Css = () => (
             - pseudo 
               $ classes 
               $ elements
-            - pseudo class ( virtual states describe the element ( :hover :root  ) )  
+
+            - pseudo class ( virtual states (( describe )) the element ( :hover :root  ) )  
               $ input:focus :disabled :invalid
               $ :not('.anySelector')  :has('.anySelector') 	.bothUlOl:is(ul, ol) .bothUlOl:where(ul, ol)
               $ :first-child => the first sibling of this type
               $ :lang(ar) && :dir(rtl)
               $ .secondInsideParent:nth-child(2) && .secondInsideDocument:nth-of-type(2)
 
-            - pseudo element ( virtual content inside an element ( ::before ::after ) )
+            - pseudo element ( select specific (( content ))  inside an element ( ::before{ content:"" } ::after ) )
+            - not all properties applied on it ( only : color , ... ) 
+              $ ::first-line ::first-letter
         
         # Notes
           *  tr:nth-child(even) {background-color: #f2f2f2;} // for siblings only 
@@ -68,7 +73,7 @@ let Css = () => (
 
         # theme template & good designs & inspire 
           * live websites & competitors
-          * behance – dribble – printerest 
+          * behance - dribble - printerest 
           * https://www.w3schools.com/w3css/w3css_templates.asp
           * https://envato.com 
           * https://themeforest.net/
