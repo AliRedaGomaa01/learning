@@ -10,13 +10,22 @@ let Css = () => (
 
         # basics
           * cascading ( [apply the inline then the last then default] & inherit from parent )
+          * css can reduce using imperative js styling like =>  a:hover &&& <a onMouseOver="">
           * selectors 
             - simple ( element - class - id  ) 
             - attribute 
-            - combinator ( group  ) 
+            - combinator ( group ',' &  Descendant ' ' &   Child combinator '>'  & [immediately after only] sibling combinator '+' &  [all after] sibling combinator '~'  ) 
             - pseudo 
               $ classes 
-              $ elements  
+              $ elements
+            - pseudo class ( virtual states describe the element ( :hover :root  ) )  
+              $ input:focus :disabled :invalid
+              $ :not('.anySelector')  :has('.anySelector') 	.bothUlOl:is(ul, ol) .bothUlOl:where(ul, ol)
+              $ :first-child => the first sibling of this type
+              $ :lang(ar) && :dir(rtl)
+              $ .secondInsideParent:nth-child(2) && .secondInsideDocument:nth-of-type(2)
+
+            - pseudo element ( virtual content inside an element ( ::before ::after ) )
         
         # Notes
           *  tr:nth-child(even) {background-color: #f2f2f2;} // for siblings only 
