@@ -123,7 +123,11 @@ let Github = () => (
             
             // reset used with local changes 
             reset <commit-hash>  // delete commits after it and put its changes in unstaged
-            reset –hard <commit-hash>  // delete commits after it and delete its changes
+            reset –hard <commit-hash>  // delete commits after it and delete commits' changes
+            // undo all staged and unstaged changes : 
+            git reset --hard HEAD
+            git reset --hard origin/main
+
 
             // revert used with remote changes 
             revert <commit-hash>  // reverse commits after it and make new commit for the team

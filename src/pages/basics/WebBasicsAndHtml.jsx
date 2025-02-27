@@ -6,17 +6,26 @@ let WebBasicsAndHtml = () => (
       # action when element is on viewport ( seen )
       # protocol://domainName-OR-ip:port/resource /* https port 443 */
       # inspect tool has very powerful options  
-        - offline service worker in networks tab 
-        - slow speed connection  
+        * offline service worker in networks tab 
+        * slow speed connection  
+      # debug mode & debug side bar & debug console
+        * in VSCode used for debugging in front & back & any code
 
       # important html 
-        - <img src="image.jpg" loading="lazy" alt="Description">
-        - <dialog> &&& <progress> &&& <menu>
+        * <img src="image.jpg" loading="lazy" alt="Description">
+        * <dialog> &&& <progress> &&& <menu>
 
       # common between front & backend 
         * routing
         * auth handling 
         * form validation  
+
+      # errors types :  
+        * usually with message 
+          - syntax 
+          - runtime  
+        * usually without message
+          - logical 
 
   `}
   </>
