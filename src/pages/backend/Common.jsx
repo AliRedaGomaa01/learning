@@ -1,6 +1,6 @@
 export default function Common() {
   return (
-    <>
+    <pre>
       {`    
       ### basics info
 
@@ -97,7 +97,7 @@ export default function Common() {
           * shortcuts & less lines
           * layout inheritance & less repeats
 
-    </pre>`}
-    </>
+    `}
+    </pre>
   );
 }

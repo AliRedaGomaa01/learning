@@ -1,7 +1,11 @@
 export default function Laravel() {
   return (
-    <div>
-      <h1>Laravel</h1>
-    </div>
+    <pre>
+      {`
+        * install php extension in ubuntu  => sudo apt-get install php8.2-dom
+        
+      
+      `}
+    </pre>
   );
 }

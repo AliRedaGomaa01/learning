@@ -1,5 +1,5 @@
 let WebBasicsAndHtml = () => (
-  <>
+  <pre>
   {`
       # we must set unique meta tags & title for each path
       # client logic is light than server logic &&&&& make it separated from html code  
@@ -28,7 +28,7 @@ let WebBasicsAndHtml = () => (
           - logical 
 
   `}
-  </>
+  </pre>
 )
 
 export default WebBasicsAndHtml
