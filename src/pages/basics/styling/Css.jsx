@@ -15,7 +15,7 @@ let Css = () => (
           * css can reduce using imperative js styling like =>  a:hover &&& <a onMouseOver="">
           * selectors 
             - simple ( element - class - id  ) 
-            - attribute 
+            - attribute a[target="_blank"] element[attribute*=value]
             - combinator ( group ',' &  Descendant ' ' &   Child combinator '>'  & [immediately after only] sibling combinator '+' &  [all after] sibling combinator '~'  ) 
             - pseudo 
               $ classes 

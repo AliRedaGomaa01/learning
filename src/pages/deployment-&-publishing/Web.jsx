@@ -40,6 +40,48 @@ export default function Web() {
           * htaccess file 
 
 
+        # cronjob
+          * hostinger
+            - /usr/bin/php /home/u12332445678/domains/yourdomain.com/public_html/artisan queue:work --timeout=60 --stop-when-empty
+            - /usr/bin/php /home/u673712366706/domains/alyex.com/public_html/projects/myproject/laravel/artisan schedule:work
+
+        # htaccess
+            - redirecting
+              $ to file 
+                <IfModule mod_rewrite.c>
+                RewriteEngine On
+                RewriteCond %{REQUEST_FILENAME} -f [OR]
+                RewriteCond %{REQUEST_FILENAME} !-f
+                RewriteRule ^(.*)$ index.php [L,QSA]
+                </IfModule>
+
+              $ to folder 
+                <IfModule mod_rewrite.c>
+                RewriteEngine on
+                RewriteCond %{HTTP_HOST} ^domain.tld$ [NC,OR]
+                RewriteCond %{HTTP_HOST} ^www.domain.tld$
+                RewriteCond %{REQUEST_URI} !subdirectory/
+                RewriteRule (.*) /subdirectory/$1 [L]
+                </IfModule>
+              OR briefly
+                <IfModule mod_rewrite.c>
+                  RewriteEngine on
+                  RewriteCond %{REQUEST_URI} !public/
+                  RewriteRule (.*) /public/$1 [L]
+                  </IfModule>
+
+              - redirecting ngnix :
+                <FilesMatch \.php$>
+                  SetHandler proxy:fcgi://skybusiness-php83
+                </FilesMatch> 
+              
+              - redirecting SPA :
+                RewriteEngine On
+                RewriteCond %{REQUEST_FILENAME} -s [OR]
+                RewriteCond %{REQUEST_FILENAME} -l [OR]
+                RewriteCond %{REQUEST_FILENAME} -d
+                RewriteRule ^.*$ - [NC,L]
+                RewriteRule ^(.*) /index.html [NC,L]
 
       `}
     </pre>
