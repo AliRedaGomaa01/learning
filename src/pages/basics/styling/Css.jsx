@@ -32,6 +32,24 @@ let Css = () => (
             - not all properties applied on it ( only : color , ... ) 
               $ ::first-line ::first-letter
         
+        # Units
+          * absolute  ( px , cm , in )
+            - pixel depends on screen resolution 
+              $ low -> pixel = one device dot 
+              $ high -> pixel = multiple device dots 
+          * relative  ( em , rem , vw , vh , % relative to parent  )
+
+        # priority : 
+          - !important keyword ( use rarely )
+          - inline style  
+          - css specificity => more specific = higher priority ex. #myDiv vs myParent div#myDiv.myDiv
+          - latest
+
+        # CSS Math Functions
+          - width: calc(100% - 100px);
+          - width: max(50%, 300px);
+          - 
+
         # Notes
           *  tr:nth-child(even) {background-color: #f2f2f2;} // for siblings only 
             - BUT tr:nth-type(even) {background-color: #f2f2f2;} // for whole document
@@ -52,6 +70,7 @@ let Css = () => (
           * list-style-image: url('sqpurple.gif');
           * max & min width to adapt layout overflow
           * overflow-wrap => for long words
+          * border radius : 15px/50px ;
           
         # fonts : 
           * font: italic small-caps bold 12px/30px Georgia, serif; /* font-size/line-height */
@@ -99,4 +118,4 @@ let Css = () => (
   </pre>
 )
 
-export default HtmlCss
+export default Css

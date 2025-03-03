@@ -63,7 +63,7 @@ let Github = () => (
             add . 
             add file1.txt file2.txt 
             add folder/ 
-            add -u // stage only updates not new nor untracked
+            add -u // stage only updates from tracked files only not new nor untracked
 
             commit // open txt editor to write long msg 
             commit -m “ short message “
@@ -146,7 +146,9 @@ let Github = () => (
             rebase -i HEAD~4  // go to interactive mode 4 commits before end in HEAD
 
 ************************************************************************************************ 
-
+      # github : 
+        * low update internet speed causes push errors 
+        * you can connect to github using tokens OR SSH ( unique device connection ) 
 
         github gists is similar to github repo but simpler with less features
 
@@ -188,6 +190,7 @@ let Github = () => (
           show <tag-name> // show tag details
           push origin <tag-name> // push specific tag
           push origin --tags // push all local tags 
+          push origin main -f  // force push to the repo  
 
           clean -Xfdn  // preview ignored files and folders that will be deleted
           clean -Xfd  // delete ignored files and folders
@@ -222,8 +225,35 @@ let Github = () => (
         Git used SHA-1  40 digits Hexa
 
         git save file versions by hashing them 
+
+
+************************************************************************************************
+      # github examples  :
+        $ init & push : 
+          echo "# MyRepo" >> README.md
+          git init
+          git add README.md
+          git commit -m "first commit"
+          git branch -M main
+          git remote add origin https://AliRedaGomaa01:token@github.com/haithamabdallah/new-board.git
+          git push -u origin main
+
+        $ pull : 
+          git init
+          git branch -M main
+          git remote add origin https://AliRedaGomaa01:token@github.com/haithamabdallah/sky-board.git  
+          git pull origin main
+
+        $ ssh connection & ssh key : 
+          - search in google "github ssh"  to reach github docs 
+          - execute command => ssh-keygen -t ed25519 -C "your_email@example.com"
+          - a file will be generated in "/c/Users/YOU/.ssh/id_ALGORITHM"
+          - copy the content of this file with extension .pub 
+          - put it in your github settings > SSH and GPG keys > new SSH key 
+
+
     `}
   </pre>
 )
 
-export default HtmlCss
+export default Github
