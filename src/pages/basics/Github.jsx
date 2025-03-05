@@ -244,7 +244,8 @@ let Github = () => (
           git remote add origin https://AliRedaGomaa01:token@github.com/haithamabdallah/sky-board.git  
           git pull origin main
 
-        $ ssh connection & ssh key : 
+        $ ssh connection & ssh key :  
+        ( repo's remote ssh link is not like remote http link )
           - search in google "github ssh"  to reach github docs 
           - execute command => ssh-keygen -t ed25519 -C "your_email@example.com"
           - a file will be generated in "/c/Users/YOU/.ssh/id_ALGORITHM"

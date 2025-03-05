@@ -8,6 +8,8 @@ export default function Express() {
           * Npm package manager of node
           * node is server side js runner and also nodemon  ** BUT ** Deno is for both js & ts ** & *** developed by the same node developer ** & *** it's more secure
           * express is a node web server with prepared ( many functions , tools , and rules )
+            - light , fast , huge community
+            - default pattern MVC
           * sending email is after configuring email server
           * use exports.key & require *** OR *** make app type => "module" in package.json  and use import & export  
           
@@ -41,6 +43,8 @@ export default function Express() {
           * express
           * nodemon
           * body-parser
+          * morgan => logging & error handler 
+          * multer => file handler 
         
 
         # routing
