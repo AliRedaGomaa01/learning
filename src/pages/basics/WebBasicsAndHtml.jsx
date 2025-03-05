@@ -11,6 +11,8 @@ let WebBasicsAndHtml = () => (
       # debug mode & debug side bar & debug console
         * in VSCode used for debugging in front & back & any code
 
+      # software requirement specifications (SRS)
+
       # important html 
         * <img src="image.jpg" loading="lazy" alt="Description">
         * <dialog> &&& <progress> &&& <menu>

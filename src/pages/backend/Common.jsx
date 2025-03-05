@@ -20,6 +20,8 @@ export default function Common() {
 
         # schedule code & commands
 
+        # SMS & whatsapp  => twilio
+
         # terminal :
           * install anyPkg@version
 
