@@ -11,12 +11,16 @@ export default function Common() {
         * interactive immediately response 
         * reactive live without reloading with state => using js proxies
         * Teleporting => changing component rendering place in the DOM
+        
         * the build process convert the code ( minify - work on all browsers - more secure )
           - build tools ( webpack ex. react-scripts  ***  vite )
+
         * SPA rendered in one app root in one basic file
-          - uses virtual DOM & small components that updates only specific pieces of code not whole the dom
-          - to override SPA SEO problems you can use ((( perfect SEO land page with subdomain &&& use digital marketing ))) 
-        * slots 
+          - uses virtual DOM & small components  
+            $ that updates only specific pieces of code not whole the dom
+          - has one root & inject components into it
+        
+        * child slots & parent layout inheritance 
         * animating ( native css js )
         * state :
           - global & local state
@@ -39,7 +43,9 @@ export default function Common() {
         * 
       
 
-      
+      # blade template engine :
+        * @stack & @push use with styles & scripts 
+        * @section & @yield use with layouts & views 
 
 
 

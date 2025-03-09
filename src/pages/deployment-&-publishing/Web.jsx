@@ -39,11 +39,14 @@ export default function Web() {
           * caching => php artisan optimize 
           * htaccess file 
 
-
         # cronjob
           * hostinger
             - /usr/bin/php /home/u12332445678/domains/yourdomain.com/public_html/artisan queue:work --timeout=60 --stop-when-empty
             - /usr/bin/php /home/u673712366706/domains/alyex.com/public_html/projects/myproject/laravel/artisan schedule:work
+
+        # scala : 
+          * /usr/bin/php82 /usr/bin/composer install 
+
 
         # htaccess
             - redirecting

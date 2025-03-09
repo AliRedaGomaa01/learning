@@ -7,6 +7,7 @@ let Css = () => (
           * use color variables for whole app
           * prepared templates save a lot of time  
           * NO WEBSITE PAGE WITHOUT ICONS 
+          * use bootstrap with sass OR use tailwind ( don't use both )
           * RGBA => opacity for background color only 
             - but opacity for element & its content   
 
@@ -67,10 +68,15 @@ let Css = () => (
         # property notes
           * text-shadow  &&& box-shadow
           * cursor
+          * text-shadow VS   box-shadow: 0 0 10px 5px lightblue, 0 0 15px 10px black;  
+            // blur : pixeled background color   // spread : all area increase  
           * list-style-image: url('sqpurple.gif');
           * max & min width to adapt layout overflow
           * overflow-wrap => for long words
           * border radius : 15px/50px ;
+          * white-space: nowrap;  overflow: hidden;  text-overflow: clip OR ellipsis; // loerom ...
+          * word-break: keep-all; word-wrap: break-word; // for breaking long words 
+          * writing-mode  //  vertical or horizontal 
           
         # fonts : 
           * font: italic small-caps bold 12px/30px Georgia, serif; /* font-size/line-height */
@@ -91,7 +97,8 @@ let Css = () => (
           * google icons
 
         # theme template & good designs & inspire 
-          * live websites & competitors
+          * search in google free web templates 
+          * live websites & competitors  ( inspect & source code )
           * behance - dribble - printerest 
           * https://www.w3schools.com/w3css/w3css_templates.asp
           * https://envato.com 

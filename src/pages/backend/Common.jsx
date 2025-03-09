@@ -4,16 +4,19 @@ export default function Common() {
       {`    
       ### basics info
 
-        * backend used when we 
+        * backend is used when we 
           - need a database ( Ex dynamic websites reached from many devices  )  
           - integrate secret 3rd apis 
           - implement complex secret logic
         * the best practice is to reduce request numbers & reduce response size
         * Huge data quantity not affect as text but as UI rendering
+        * mini resources with small response size *** is better than *** one big respose resource
+          - many requests is better than big responses     
         * html structure multiply responded arrays' size
         * we must use 
           - env variables for values changes based on environment & secret values
           - logging for http requests ( ex. morgan in express ) 
+        * we must reform & refactor data before sending it as api to protect sensitive data ( laravel resource )
         
       
       ### basics topics
@@ -88,7 +91,7 @@ export default function Common() {
             * collect payment method ---- then verify it
             * charge amount from method ---- then manage payments in database 
 
-       * patterns MVC  ( database , UI , connector )
+       * patterns MVC  ( model : database , view : UI , controllers : connector )
 
       * automated testing => test code using code  
 
