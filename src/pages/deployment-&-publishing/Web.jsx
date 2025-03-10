@@ -36,6 +36,7 @@ export default function Web() {
           * cron jobs ( queue work )
           * php artisan migrate --seed
           * php artisan storage:link 
+          * prepare maintenance mode option 
           * caching => php artisan optimize 
           * htaccess file 
 

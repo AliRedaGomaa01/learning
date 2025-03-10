@@ -12,8 +12,14 @@ export default function Common() {
         * reactive live without reloading with state => using js proxies
         * Teleporting => changing component rendering place in the DOM
         
-        * the build process convert the code ( minify - work on all browsers - more secure )
+        * the build process enhances code 
           - build tools ( webpack ex. react-scripts  ***  vite )
+            $ collect assets 
+            $ bundling 
+            $ hot reload 
+            $ minify & compress 
+            $ work on all browsers 
+            $ more secure 
 
         * SPA rendered in one app root in one basic file
           - uses virtual DOM & small components  
@@ -43,9 +49,7 @@ export default function Common() {
         * 
       
 
-      # blade template engine :
-        * @stack & @push use with styles & scripts 
-        * @section & @yield use with layouts & views 
+
 
 
 

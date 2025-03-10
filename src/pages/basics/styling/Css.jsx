@@ -77,7 +77,14 @@ let Css = () => (
           * white-space: nowrap;  overflow: hidden;  text-overflow: clip OR ellipsis; // loerom ...
           * word-break: keep-all; word-wrap: break-word; // for breaking long words 
           * writing-mode  //  vertical or horizontal 
+          * font-stretch
+          * transform : translate , scale , rotate , skew , // transform-origin
           
+        # css rules :
+          - @font-face { }
+          - @keyframes  { }
+          - @media screen and (max-width: 600px) { }
+
         # fonts : 
           * font: italic small-caps bold 12px/30px Georgia, serif; /* font-size/line-height */
           * use 2 fonts from two families not only one 
