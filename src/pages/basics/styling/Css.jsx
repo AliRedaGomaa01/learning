@@ -79,6 +79,7 @@ let Css = () => (
           * writing-mode  //  vertical or horizontal 
           * font-stretch
           * transform : translate , scale , rotate , skew , // transform-origin
+            - 3d => rotateZ()
           
         # css rules :
           - @font-face { }
