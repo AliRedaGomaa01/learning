@@ -10,6 +10,11 @@ export default function Common() {
           - implement complex secret logic
         * the best practice is to reduce request numbers & reduce response size
         * Huge data quantity not affect as text but as UI rendering
+        * queues & job & schedules tasks & cron jobs
+        * thin controllers && fat models
+        * Route Model Binding ( bind the route parameter to the DB model  )
+        * Service Provider => code executed on every request before middlewares 
+        * authorization => policies & gates 
         * mini resources with small response size *** is better than *** one big respose resource
           - many requests is better than big responses     
         * html structure multiply responded arrays' size

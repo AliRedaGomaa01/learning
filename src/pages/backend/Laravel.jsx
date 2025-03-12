@@ -8,6 +8,9 @@ export default function Laravel() {
           * recommended => 'starter kit' 
           * update env.example continuously
           * many services have config file => php artisan config:publish --all
+          * composer ( package manager ) , tinker ( php code in terminal ) , artisan ( command handler ) 
+          * seeding & factories ( Faker ) 
+          * request files to validate request data 
           * inertia prevents 
             - two repos on github 
             - subdomain for front or back 
@@ -17,16 +20,21 @@ export default function Laravel() {
             - for  apache  => execute phpinfo() in your laravel code or tinker
             - for terminal CMD => execute php -ini in your terminal  
 
-        # frontend :
+        # frontend  ( search for laravel docs Blade ) :
           * laravel has blade template engine &&& ( livewire - albine ) as frontend libraries 
           * blade template engine :
-            * @stack & @push use with styles & scripts 
-            * @section & @yield use with layouts & views
-            * directives ==>> 
-              -  @php 
+          * directives ==>> 
+              - @php 
+              - @extend @include('posts.index' , [ 'posts' => $posts ] ) 
+              - @stack & @push & @perpend 
+                $ use with styles & scripts
+                $ may used as a teleport & send a part to other place 
+              - @section & @yield use with layouts & views
               - @csrf @method('patch')
-              - @if @error @endif @foreelse @empty 
-              - @foreach( $arr as $key => $val ) @while(true)  @continue(true) @break(true)  $loop->index $loop->count 
+              - @if @error @endif @foreelse @empty @can 
+              - @foreach( $arr as $key => $val ) @while(true)  
+                $ @continue(true) @break(true)  $loop->index $loop->count 
+              - {{string}} {!! htmlCode !!}
             * escaping ==>> @@if()  ::class    
             * <script> var app = JSON.parse( <?php echo json_encode($array); ?> );  </script>
         
@@ -47,6 +55,7 @@ export default function Laravel() {
           * laravel debugbar
           * laravel telescope
           * trans
+          * spatia ( media -  )
           
         # code tips & tricks :
           * (object) $myArr  => to solve $myArr->id  errors
