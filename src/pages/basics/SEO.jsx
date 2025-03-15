@@ -10,11 +10,11 @@ let SEO = () => (
       * use SEO measurement tools
       * using marketing strategies is 500% important than using SEO 
 
-      * not depends only on the code 
+      * not depends only on the code but also on the next tips
         - brand name repetition & uniqueness
         - clear chosen domain 
         - frequent searching from users in Search Engines
-        -  How long  was it deployed  from ? ( months - years - ... )
+        - How long  was it deployed  from ? ( months - years - ... )
       
       ` }
   </pre>
