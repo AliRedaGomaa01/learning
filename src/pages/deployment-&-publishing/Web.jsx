@@ -10,7 +10,6 @@ export default function Web() {
           * connect server to github   
           * prepare DB config 
 
-
         # general deploying tips :
           * delete all extra unneeded files ( imgs - assets ) 
           * delete all extra data ( test database data ) 
@@ -27,7 +26,7 @@ export default function Web() {
             - DB config 
             - mail server  
             - APP_ENV=production  
-            -  APP_DEBUG=false  
+            - APP_DEBUG=false  
             - 3rd api party configuration ( ex. stripe  )
           * composer install - 
           * php artisan key:generate
@@ -51,28 +50,30 @@ export default function Web() {
 
         # htaccess
             - redirecting
-              $ to file 
-                <IfModule mod_rewrite.c>
-                RewriteEngine On
-                RewriteCond %{REQUEST_FILENAME} -f [OR]
-                RewriteCond %{REQUEST_FILENAME} !-f
-                RewriteRule ^(.*)$ index.php [L,QSA]
-                </IfModule>
+$ to file 
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [L,QSA]
+</IfModule>
 
-              $ to folder 
-                <IfModule mod_rewrite.c>
-                RewriteEngine on
-                RewriteCond %{HTTP_HOST} ^domain.tld$ [NC,OR]
-                RewriteCond %{HTTP_HOST} ^www.domain.tld$
-                RewriteCond %{REQUEST_URI} !subdirectory/
-                RewriteRule (.*) /subdirectory/$1 [L]
-                </IfModule>
-              OR briefly
-                <IfModule mod_rewrite.c>
-                  RewriteEngine on
-                  RewriteCond %{REQUEST_URI} !public/
-                  RewriteRule (.*) /public/$1 [L]
-                  </IfModule>
+$ to folder 
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^domain.tld$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.domain.tld$
+RewriteCond %{REQUEST_URI} !subdirectory/
+RewriteRule (.*) /subdirectory/$1 [L]
+</IfModule>
+****
+OR briefly
+****
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{REQUEST_URI} !public/
+  RewriteRule (.*) /public/$1 [L]
+</IfModule>
 
               - redirecting ngnix :
                 <FilesMatch \.php$>
