@@ -3,6 +3,7 @@ let WebBasicsAndHtml = () => (
   {`
       # we must set unique meta tags & title for each path
       # client logic is light than server logic &&&&& make it separated from html code  
+        - user can reach client logic by is prevented from server logic  
       # action when element is on viewport ( seen )
       # super global variables => $_ENV
       # protocol://domainName-OR-ip:port/resource /* https port 443 */

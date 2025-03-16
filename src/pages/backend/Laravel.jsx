@@ -11,6 +11,7 @@ export default function Laravel() {
           * composer ( package manager ) , tinker ( php code in terminal ) , artisan ( command handler ) 
           * seeding & factories ( Faker ) 
           * request files to validate request data 
+          * queues => background jobs & tasks ( async )
           * inertia prevents 
             - two repos on github 
             - subdomain for front or back 
@@ -21,7 +22,8 @@ export default function Laravel() {
             - for terminal CMD => execute php -ini in your terminal  
 
         # frontend  ( search for laravel docs Blade ) :
-          * laravel has blade template engine &&& ( livewire - albine ) as frontend libraries 
+          * laravel has blade template engine &&& ( livewire - albine ) as frontend libraries
+          * inertia ( react - vue ) => $page.props   OR usePage().props 
           * blade template engine :
           * directives ==>> 
               - @php 
@@ -52,10 +54,23 @@ export default function Laravel() {
             $ php artisan env:decrypt --key=3UVsEgGVK36XN82KKeyLFMhvosbZN1aF
           
         # packages : (  packagist.org  )
-          * laravel debugbar
-          * laravel telescope
+          * debugbar
+          * telescope
           * trans
           * spatia ( media -  )
+          * breeze & jetstream
+          * passport & sanctum
+          * Carbon ( data & time ) [ diffForHumans ] 
+          * intervention image photo filters & image edit 
+          * cashier stripe.com for visa cards 
+          * paypal checkout srmklive
+          * pusher notifications 
+          * leaflet.js maps  
+          * ffmpeg video & image 
+          * amazon aws s3 
+          * chart.js charts  
+          * datatables.js features for tables   
+
           
         # code tips & tricks :
           * (object) $myArr  => to solve $myArr->id  errors

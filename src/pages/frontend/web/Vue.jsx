@@ -106,7 +106,20 @@ export default function Vue() {
           
           setup  ( props , context  )  { // convert props to _ if not used  
             context.emit( 'my-event' , myVar )
-        
+
+          <script setup> defineOptions({ layout: Layout }) </script>
+          // use layout in options to make it presestance & not reloaded 
+              //   when reload the component *** or use it as a component child 
+
+          <script>    </script>
+          <script setup> </script>
+          <template>    </template>
+          <style> </style>
+
+          <script> export default {  props : { name : String , users : Object }  , 
+          components : { Link } , layout : Layout  , setup () { return  } } </script>
+
+
 
       `}
     </pre>
