@@ -27,12 +27,14 @@ export default function Vue() {
 
         # passing data  :  
 
-          * to child => using props ( type - required - default - validator )
+          * to child => 
+            - using component call attributes & props ( type - required - default - validator )
+            - using routing (ex. passing via inertia)
           * to parent => by emitting custom events 
           * provide & inject ( ex. functions & object  ) 
           * VueX or Pinia 
           * global components 
-          * custom plugins
+          * custom plugins ( to share data between all components [options api only] )
 
         # lifeCycle :  
 
@@ -46,7 +48,7 @@ export default function Vue() {
           * <template #default=”slotprops” > html </template>
           * <template v-slot:name > html </template>
 
-        # reusable functions to share data & methods : 
+        # reusable helper functions to share data & methods ( like traits in laravel ) : 
 
           * mixins for options api 
           * composable or custom hooks for  composition api 
@@ -118,6 +120,18 @@ export default function Vue() {
 
           <script> export default {  props : { name : String , users : Object }  , 
           components : { Link } , layout : Layout  , setup () { return  } } </script>
+
+
+          ___________________
+          Watchers for execute functions
+          ___________________
+          watch([ refVar  ,  ()=>reactiveVar.key1 ] , async ()=>{} )
+          watchEffect(async () => {code includes any ref or reactive values } })
+          const stopwatch = watch ( var , ()=>{ code }  ) 
+          stopwatch() ; // to stop watching 
+
+
+
 
 
 

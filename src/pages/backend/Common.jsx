@@ -88,6 +88,12 @@ export default function Common() {
           - 3-party auth ( facebook - google )
           - csrf ensures that the request came from your website not from another fake website ( not optional )
           - use both client & server validation :  client reduces requests to server but it's overridable 
+          
+        * notifications :
+          - specific device by device token & firebase
+          - broadcast for all devices  
+          - sms & whatsapp & emails 
+          - database 
 
        * payment
           - stripe ( search stripe payments docs )

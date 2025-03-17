@@ -78,7 +78,8 @@ let Css = () => (
           * word-break: keep-all; word-wrap: break-word; // for breaking long words 
           * writing-mode  //  vertical or horizontal 
           * font-stretch
-          * transform : translate , scale , rotate , skew , // transform-origin
+          * transform : translate , scale , rotate , skew , 
+            // transform-origin  // scaleX(-1) to reverse img in x direction
             - 3d => rotateZ()
           
         # css rules :

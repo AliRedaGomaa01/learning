@@ -45,7 +45,7 @@ export default function Express() {
           * body-parser
           * morgan => logging & error handler 
           * multer => file handler 
-        
+          * sharp => image processing ( resize - change format or quality - ... )
 
         # routing
         

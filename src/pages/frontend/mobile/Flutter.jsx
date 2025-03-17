@@ -4,6 +4,7 @@ export default function Flutter() {
       {`
       # basic info :
         * we consider any function with return type of Future as a promise myFn().then().catchError()
+        * in flutter widget tree  BUT in HTML DOM
         * more  UI customizable than other cross
         * uses  widget with properties & identifiers 
         * Larger size than native *** little less speed ***  limited

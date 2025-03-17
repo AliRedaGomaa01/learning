@@ -75,8 +75,8 @@ OR briefly
   RewriteRule (.*) /public/$1 [L]
 </IfModule>
 
-              - redirecting ngnix :
-                <FilesMatch \.php$>
+              - redirecting ngnix : \\ => \
+                <FilesMatch \\.php$>
                   SetHandler proxy:fcgi://skybusiness-php83
                 </FilesMatch> 
               

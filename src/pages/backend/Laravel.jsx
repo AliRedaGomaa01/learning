@@ -12,6 +12,10 @@ export default function Laravel() {
           * seeding & factories ( Faker ) 
           * request files to validate request data 
           * queues => background jobs & tasks ( async )
+          * centralized control & reuse =>
+              - traits 
+              - events 
+              - services 
           * inertia prevents 
             - two repos on github 
             - subdomain for front or back 
@@ -39,6 +43,9 @@ export default function Laravel() {
               - {{string}} {!! htmlCode !!}
             * escaping ==>> @@if()  ::class    
             * <script> var app = JSON.parse( <?php echo json_encode($array); ?> );  </script>
+            * return Inertia::render('Post/Show', [  'post' => $post->only(   'id',    'title',   ), 
+              'edit_url' => route('posts.edit', $post),  'canEdit' => auth()->id() === $post->user_id ]);
+            // returned data is visible in the client console ,,  less data means load faster & more secure
         
         #  some error handling  :
           * composer dump-autoload  // errors can't find or resolve file
@@ -50,6 +57,7 @@ export default function Laravel() {
           * php artisan *** OR *** php artisan list => get all artisan commands
           * php artisan --version => get laravel version
           * php artisan about => get info about opened project
+          * php artisan down // maintenance ** down to enable  mode && up to disable mode 
           * php artisan env:encrypt --key=3UVsEgGVK36XN82KKeyLFMhvosbZN1aF => encrypt env file to share it via VSC  
             $ php artisan env:decrypt --key=3UVsEgGVK36XN82KKeyLFMhvosbZN1aF
           
