@@ -12,10 +12,6 @@ export default function Laravel() {
           * seeding & factories ( Faker ) 
           * request files to validate request data 
           * queues => background jobs & tasks ( async )
-          * centralized control & reuse =>
-              - traits 
-              - events 
-              - services 
           * inertia prevents 
             - two repos on github 
             - subdomain for front or back 
@@ -28,8 +24,14 @@ export default function Laravel() {
         # frontend  ( search for laravel docs Blade ) :
           * laravel has blade template engine &&& ( livewire - albine ) as frontend libraries
           * inertia ( react - vue ) => $page.props   OR usePage().props 
+            - preserve state => means not to update ( inputs - props ) 
+            - <Link href="/logout" method="post"  :data="{ foo: bar }"  preserve-state preserve-scroll 
+            :class="$'{' $page.url === '/users' || $page.component === 'Users/Index' ? 'active' : '' }"> Logout </Link>
+
           * blade template engine :
-          * directives ==>> 
+            - {{ request()->routeIs('dashboard') ? “active” : "" }}  // returns text
+            - {!! $user->isAdmin ? 'checked' : '' !!} // returns html
+            - directives ==>> 
               - @php 
               - @extend @include('posts.index' , [ 'posts' => $posts ] ) 
               - @stack & @push & @perpend 

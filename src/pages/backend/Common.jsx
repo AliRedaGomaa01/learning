@@ -15,6 +15,10 @@ export default function Common() {
         * Route Model Binding ( bind the route parameter to the DB model  )
         * Service Provider => code executed on every request before middlewares 
         * authorization => policies & gates 
+        * centralized control & reuse =>
+          - traits 
+          - events & listeners 
+          - services 
         * mini resources with small response size *** is better than *** one big respose resource
           - many requests is better than big responses     
         * html structure multiply responded arrays' size
@@ -88,12 +92,15 @@ export default function Common() {
           - 3-party auth ( facebook - google )
           - csrf ensures that the request came from your website not from another fake website ( not optional )
           - use both client & server validation :  client reduces requests to server but it's overridable 
+          - it's impossible to prevent hacking 100% but we try to make it more difficult & requires higher skills
+          - don't take user input in a script area ( sql injection - html & js script ) 
           
         * notifications :
           - specific device by device token & firebase
           - broadcast for all devices  
           - sms & whatsapp & emails 
           - database 
+          - read status 
 
        * payment
           - stripe ( search stripe payments docs )

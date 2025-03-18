@@ -81,6 +81,18 @@ let Css = () => (
           * transform : translate , scale , rotate , skew , 
             // transform-origin  // scaleX(-1) to reverse img in x direction
             - 3d => rotateZ()
+          * clip-path: circle(50%); shape-outside: circle(45%); // ex. circle  img with wrapped text
+          * img filters : 
+            - filter: blur(2px)
+            - brightness(150%)
+            - contrast(0.5)
+            - drop-shadow(8px 8px 10px gray)
+            - opacity(0.3)
+            - saturate(200%)
+            - grayscale(0.5) // colors
+            - hue-rotate(90deg)  // colors
+            - invert(0.3) // colors
+            - sepia() // colors
           
         # css rules :
           - @font-face { }
