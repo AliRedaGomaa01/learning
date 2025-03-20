@@ -21,12 +21,22 @@ export default function Laravel() {
             - for  apache  => execute phpinfo() in your laravel code or tinker
             - for terminal CMD => execute php -ini in your terminal  
 
+        *****************
         # frontend  ( search for laravel docs Blade ) :
+        *****************
           * laravel has blade template engine &&& ( livewire - albine ) as frontend libraries
           * inertia ( react - vue ) => $page.props   OR usePage().props 
             - preserve state => means not to update ( inputs - props ) 
+            - <Head>  <title> my title</title> <meta /> </Head>
             - <Link href="/logout" method="post"  :data="{ foo: bar }"  preserve-state preserve-scroll 
-            :class="$'{' $page.url === '/users' || $page.component === 'Users/Index' ? 'active' : '' }"> Logout </Link>
+              :class="$'{' $page.url === '/users' || $page.component === 'Users/Index' ? 'active' : '' }"> Logout </Link>
+            - use router library to navigate & send requests
+              $ router.visit(url, options including Method )
+              $ router options 
+                  { method: 'get',   data: {},   replace: false,  forceFormData: true,   
+                  preserveScroll: false,   only: [],   headers: {},   
+                  onBefore: () => confirm('Are…?') , onProgress: progress => {}, 
+                  onSuccess: page => {} ,  onError: errors => {}} 
 
           * blade template engine :
             - {{ request()->routeIs('dashboard') ? “active” : "" }}  // returns text
@@ -64,6 +74,7 @@ export default function Laravel() {
             $ php artisan env:decrypt --key=3UVsEgGVK36XN82KKeyLFMhvosbZN1aF
           
         # packages : (  packagist.org  )
+          * laravel/installer => laravel CLI
           * debugbar
           * telescope
           * trans
@@ -84,7 +95,10 @@ export default function Laravel() {
           
         # code tips & tricks :
           * (object) $myArr  => to solve $myArr->id  errors
-          * logging [ie. storage/lararvel.log ] => info('data should be passed to the log file') *** OR ***  logger('message')
+          * logging [ie. storage/lararvel.log ] => 
+              info('data should be passed to the log file') 
+              *** OR ***  logger('message')
+          * always use try{}catch(){} && DB::beginTransaction() DB::commit() DB::rollback()  with db insert & update queries
       
       `}
     </pre>

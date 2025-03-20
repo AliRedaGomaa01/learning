@@ -81,7 +81,9 @@ let Css = () => (
           * transform : translate , scale , rotate , skew , 
             // transform-origin  // scaleX(-1) to reverse img in x direction
             - 3d => rotateZ()
-          * clip-path: circle(50%); shape-outside: circle(45%); // ex. circle  img with wrapped text
+          * clip-path: circle(50%); shape-outside: circle(45%); 
+            // ex. circle  img with wrapped text
+          * object-fit & object-position => to control aspect ratio of image & video
           * img filters : 
             - filter: blur(2px)
             - brightness(150%)

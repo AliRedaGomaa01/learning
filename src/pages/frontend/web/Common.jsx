@@ -21,6 +21,8 @@ export default function Common() {
             $ work on all browsers 
             $ more secure 
 
+        * data hydration => passing the endpoint server data as props to the page component
+
         * SPA rendered in one app root in one basic file
           - uses virtual DOM & small components  
             $ that updates only specific pieces of code not whole the dom

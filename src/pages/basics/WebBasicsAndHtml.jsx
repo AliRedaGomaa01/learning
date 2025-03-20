@@ -2,6 +2,7 @@ let WebBasicsAndHtml = () => (
   <pre>
   {`
       # we must set unique meta tags & title for each path
+      # this keyword refers to the instant of the class or sometimes the class 
       # client logic is light than server logic &&&&& make it separated from html code  
         - user can reach client logic by is prevented from server logic  
       # action when element is on viewport ( seen )

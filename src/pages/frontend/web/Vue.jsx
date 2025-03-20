@@ -121,7 +121,6 @@ export default function Vue() {
           <script> export default {  props : { name : String , users : Object }  , 
           components : { Link } , layout : Layout  , setup () { return  } } </script>
 
-
           ___________________
           Watchers for execute functions
           ___________________
@@ -132,6 +131,31 @@ export default function Vue() {
 
 
 
+          ___________________
+          layout & slots inheriting
+          ___________________
+          <script setup>
+          import Layout from './Layout/AuthenticatedLayout.vue'; 
+          import MyComponent from './MyComponent.vue' ;  
+          </script>
+          <template>
+            <Layout>     <MyComponent  />       </Layout>  
+          // if two tags we use <my-component> </my-component>
+          </template>
+
+          <template>  <slot />  </template>
+
+          
+          <div v-if="$slots.myName">
+            <slot name="myName" > 
+              optional default content shown if slot not passed
+            </slot >
+          </div>  
+          <AnyName> <template #myName>html</template> </AnyName>
+
+          v-if=”$slots.myName”
+          ---------------- 
+          <Component :is=”boolVal ? 'Link' : 'span' > 
 
 
 

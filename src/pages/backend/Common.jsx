@@ -11,7 +11,9 @@ export default function Common() {
         * the best practice is to reduce request numbers & reduce response size
         * Huge data quantity not affect as text but as UI rendering
         * queues & job & schedules tasks & cron jobs
-        * thin controllers && fat models
+        * thin controllers &&& fat models  
+        * focused controller on one thing *** NOT *** one controller for all things
+        * Single Action controller   =>  public function __invoke(){}
         * Route Model Binding ( bind the route parameter to the DB model  )
         * Service Provider => code executed on every request before middlewares 
         * authorization => policies & gates 
@@ -26,7 +28,6 @@ export default function Common() {
           - env variables for values changes based on environment & secret values
           - logging for http requests ( ex. morgan in express ) 
         * we must reform & refactor data before sending it as api to protect sensitive data ( laravel resource )
-        
       
       ### basics topics
 

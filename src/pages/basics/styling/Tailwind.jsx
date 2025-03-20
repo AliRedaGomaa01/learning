@@ -37,7 +37,7 @@ export default function Tailwind() {
           * [&>*]:text-black [&_*]:text-black 
           * [combinator selectors]:[css_code]  ====>>> [&_*]:[color:black!important] 
           * min-[640px]:text-white md:text-white
-          * dark:bg-white  **** <html class=”dark” >  tailwind config => darkMode: ‘class’  or activate it by system 
+          * dark:bg-white  **** <html class=”dark” >  tailwind config => darkMode: 'class' or activate it by system 
 
         # Directives & layers =>
           * base  => html original elements 
