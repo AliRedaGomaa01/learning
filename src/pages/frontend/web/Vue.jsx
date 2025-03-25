@@ -79,7 +79,8 @@ export default function Vue() {
           * meta property to pass data to $route.meta 
           * route slots
           * navigating using ( links - programmatically ) - active link - redirect - navigation scroll behavior
-          * navigation guard and middleware & route  life cycle  (  beforeeach - beforeenter beforeRouteEnter *** beforeleave - beforeRouteLeave -  afterEach )
+          * navigation guard and middleware & route  life cycle  
+            - (  beforeeach - beforeenter beforeRouteEnter *** beforeleave - beforeRouteLeave -  afterEach )
 
         # optimizing : 
 
@@ -109,8 +110,13 @@ export default function Vue() {
           setup  ( props , context  )  { // convert props to _ if not used  
             context.emit( 'my-event' , myVar )
 
+          <script setup> 
+          defineProps({ user: Object }) ;  usePage().props.user) ;
+          OR  const props = defineProps({ user: Object }) ; props.user ;
+          </script>
+
           <script setup> defineOptions({ layout: Layout }) </script>
-          // use layout in options to make it presestance & not reloaded 
+          // use layout in options to make it Persistent & not reloaded 
               //   when reload the component *** or use it as a component child 
 
           <script>    </script>

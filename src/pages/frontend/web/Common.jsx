@@ -10,7 +10,8 @@ export default function Common() {
         * parent fragment is preferred
         * interactive immediately response 
         * reactive live without reloading with state => using js proxies
-        * Teleporting => changing component rendering place in the DOM
+        * Teleporting => changing component rendering place in the DOM.
+        * remember Astro.js => SSR frontend framework
         
         * the build process enhances code 
           - build tools ( webpack ex. react-scripts  ***  vite )
@@ -22,6 +23,8 @@ export default function Common() {
             $ more secure 
 
         * data hydration => passing the endpoint server data as props to the page component
+
+        * props may be passed from parent to child and from child to parent  
 
         * SPA rendered in one app root in one basic file
           - uses virtual DOM & small components  

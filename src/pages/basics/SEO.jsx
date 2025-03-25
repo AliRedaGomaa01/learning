@@ -9,6 +9,7 @@ let SEO = () => (
       * make website responsive 
       * use SEO measurement tools
       * using marketing strategies is 500% important than using SEO 
+      * redirecting is not good for SEO
 
       * not depends only on the code but also on the next tips
         - brand name repetition & uniqueness

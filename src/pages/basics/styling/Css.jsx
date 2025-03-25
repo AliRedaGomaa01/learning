@@ -84,6 +84,7 @@ let Css = () => (
           * clip-path: circle(50%); shape-outside: circle(45%); 
             // ex. circle  img with wrapped text
           * object-fit & object-position => to control aspect ratio of image & video
+          * mask-image  ( gradient or SVG or PNG  )
           * img filters : 
             - filter: blur(2px)
             - brightness(150%)

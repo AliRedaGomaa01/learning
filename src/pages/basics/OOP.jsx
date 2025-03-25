@@ -15,4 +15,4 @@ let OOP = () => (
 
 )
 
-export default SEO
+export default OOP
