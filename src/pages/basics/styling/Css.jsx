@@ -85,6 +85,9 @@ let Css = () => (
     // ex. circle  img with wrapped text
   * object-fit & object-position => to control aspect ratio of image & video
   * mask-image  ( gradient or SVG or PNG  )
+  * column-count => divide text in div cross multi columns
+  * resize => enable user to control box size like textarea
+  * outline-offset => space between border & outline
   * img filters : 
     - filter: blur(2px)
     - brightness(150%)

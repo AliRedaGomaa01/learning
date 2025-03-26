@@ -31,8 +31,8 @@ export default function Vue() {
     - using component call attributes & props ( type - required - default - validator )
     - using routing (ex. passing via inertia)
   * to parent => by emitting custom events 
-  * provide & inject ( ex. functions & object  ) 
-  * VueX or Pinia 
+  * provide & inject ( ex. functions & object  ) // to send data to all descendants
+  * VueX or Pinia  ( global state manager )
   * global components 
   * custom plugins ( to share data between all components [options api only] )
 

@@ -22,12 +22,20 @@ export default function Laravel() {
     - for terminal CMD => execute php -ini in your terminal  
 
 *****************
+# php :
+*****************
+  * super global variables => $_ENV $_GET $_SERVER 
+  * 
+
+*****************
 # frontend  ( search for laravel docs Blade ) :
 *****************
   * laravel has blade template engine &&& ( livewire - albine ) as frontend libraries
   * inertia ( react - vue ) => $page.props   OR usePage().props 
     - preserve state => means not to update ( inputs - props ) 
     - <Head>  <title> my title</title> <meta /> </Head>
+    - HandleInertiaRequests => middleware to share data between all inertia pages // like share between views in AppServiceProvider 
+    - in script usePage() but in template {{ $page }} 
     - <Link href="/logout" method="post"  :data="{ foo: bar }"  preserve-state preserve-scroll 
       :class="$'{' $page.url === '/users' || $page.component === 'Users/Index' ? 'active' : '' }"> Logout </Link>
     - use router library to navigate & send requests
@@ -55,6 +63,8 @@ export default function Laravel() {
       - {{string}} {!! htmlCode !!}
     * escaping ==>> @@if()  ::class    
     * <script> var app = JSON.parse( <?php echo json_encode($array); ?> );  </script>
+    * Active Nav Link => if ($request->is('admin/*')) if ($request->routeIs('admin.*')) 
+
     * return Inertia::render('Post/Show', [  'post' => $post->only(   'id',    'title',   ), 
       'edit_url' => route('posts.edit', $post),  'canEdit' => auth()->id() === $post->user_id ]);
     // returned data is visible in the client console ,,  less data means load faster & more secure
@@ -99,6 +109,9 @@ export default function Laravel() {
       info('data should be passed to the log file') 
       *** OR ***  logger('message')
   * always use try{}catch(){} && DB::beginTransaction() DB::commit() DB::rollback()  with db insert & update queries
+  * action([UserController::class, 'profile'], ['id' => 1]);  / get the uri of the function
+  * (new UserController)->store();  // call a function in a controller
+
       
       `}
     </pre>

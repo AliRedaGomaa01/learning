@@ -23,8 +23,6 @@ export default function Common() {
 
 # firebase :
   * firebase contains ( realtime notification FCM - sms messages - storage ) 
-  * 
-  * 
   
 # relations :  
   * one-one 
