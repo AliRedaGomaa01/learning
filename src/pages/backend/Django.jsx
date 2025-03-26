@@ -1,24 +1,19 @@
 export default function Django() {
   return (
-    <div>
-      ### main info 
-      <span>
-        ** Django is widely used with big projects 
-        ** 
-      </span>
+    <pre>
+      {`
+# main info 
+  * Django is widely used with big projects 
 
-      ### commands
-      <span>
-        ** use docs to install 
-        ** run server {/* => */}  python manage.py runserver
-        ** start child app {/* => */} python manage.py startapp featureName
-        ** django-admin equals {/* => */} php artisan
-      </span>
+# commands
+  * use docs to install 
+  * run server {/* => */}  python manage.py runserver
+  * start child app {/* => */} python manage.py startapp featureName
+  * django-admin equals {/* => */} php artisan
 
-      ### views 
-      <span>
-        ** put each view file in a folder with unique name 
-      </span>
-    </div>
+# views 
+  * put each view file in a folder with unique name 
+      `}
+    </pre>
   );
 }

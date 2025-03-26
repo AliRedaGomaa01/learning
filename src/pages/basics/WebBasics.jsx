@@ -1,10 +1,9 @@
-let WebBasicsAndHtml = () => (
+let WebBasics = () => (
   <pre>
   {`
-      # we must set unique meta tags & title for each path
-      # this keyword refers to the instant of the class or sometimes the class 
-      # client logic is light than server logic &&&&& make it separated from html code  
-        - user can reach client logic by is prevented from server logic  
+      # client logic is light than server logic 
+        - make it separated from html code  
+        - client logic can be reached by user   
       # action when element is on viewport ( seen )
       # super global variables => $_ENV
       # protocol://domainName-OR-ip:port/resource /* https port 443 */
@@ -12,7 +11,6 @@ let WebBasicsAndHtml = () => (
         * offline service worker in networks tab 
         * slow speed connection
         * network to get request info
-        *   
       # debug mode & debug side bar & debug console
         * in VSCode used for debugging in front & back & any code
 
@@ -43,4 +41,4 @@ let WebBasicsAndHtml = () => (
   </pre>
 )
 
-export default WebBasicsAndHtml
+export default WebBasics

@@ -1,5 +1,11 @@
 @import "tailwindcss";
+pre {
+  white-space: pre-wrap;
+  font-family: cursive
+  /* word-wrap: break-word;  
+  overflow-wrap: break-word;  */
+}
 
-h1 {
-  @apply text-center after:content-['_***'] before:content-['***_'];
+.active { 
+  @apply bg-gray-100;
 }

@@ -3,98 +3,98 @@ export default function Express() {
     <div>
       <pre>
 {`
-        # some info
+# some info
 
-          * Npm package manager of node
-          * node is server side js runner and also nodemon  ** BUT ** Deno is for both js & ts ** & *** developed by the same node developer ** & *** it's more secure
-          * express is a node web server with prepared ( many functions , tools , and rules )
-            - light , fast , huge community
-            - default pattern MVC
-          * sending email is after configuring email server
-          * use exports.key & require *** OR *** make app type => "module" in package.json  and use import & export  
-          
-        # error handling
-        
-          * global error   app.use((err, req, res , next) => { res.status(404).json({ err });})
-          * global not found  app.all( "*" , (req, res, next) => { const err = new Error (" msg " ) ; next(err.message); }) 
-          * disable errors on production mode 
-          * handling app exceptions =>  process.on('UnhandledRejection' , () => {} )  // to listen on errors like database connection 
-        
-        # terminal cmds
-        
-          * npm install {"<package>"}
-          * npm init {"== >>>"} start node project
-          * node app.js {"== >>>"} run file as build
-          * nodemon app.js  {"== >>>"} run file as dev & listen to file changes
+  * Npm package manager of node
+  * node is server side js runner and also nodemon  ** BUT ** Deno is for both js & ts ** & *** developed by the same node developer ** & *** it's more secure
+  * express is a node web server with prepared ( many functions , tools , and rules )
+    - light , fast , huge community
+    - default pattern MVC
+  * sending email is after configuring email server
+  * use exports.key & require *** OR *** make app type => "module" in package.json  and use import & export  
+  
+# error handling
 
-        # env & app defineConfig
-        
-          * app.set('view engine' , 'ejs')
-        
+  * global error   app.use((err, req, res , next) => { res.status(404).json({ err });})
+  * global not found  app.all( "*" , (req, res, next) => { const err = new Error (" msg " ) ; next(err.message); }) 
+  * disable errors on production mode 
+  * handling app exceptions =>  process.on('UnhandledRejection' , () => {} )  // to listen on errors like database connection 
 
-        # dependencies
-        
-          * use --save with development & production dependencies  ( default )
-          &nbsp; &nbsp; but use --save-dev for development dependencies
-        
+# terminal cmds
 
-        #  packages  ( almost every thing is via package )
-        
-          * express
-          * nodemon
-          * body-parser
-          * morgan => logging & error handler 
-          * multer => file handler 
-          * sharp => image processing ( resize - change format or quality - ... )
+  * npm install {"<package>"}
+  * npm init {"== >>>"} start node project
+  * node app.js {"== >>>"} run file as build
+  * nodemon app.js  {"== >>>"} run file as dev & listen to file changes
 
-        # routing
-        
-          * using “use( “/” , {"() => "}  ) “  represent fallback for all paths , but if use get method if specify
-          * in linux file paths is “folder/file” but in windows “folder\file”  SO we use sendFile( path.join( __dirname , “folder” , “file” ) )
-          {"// dirname is path of current file"}
-          {"// and you can make rootpath.js in util folder to give you path of root file"}
-        
+# env & app defineConfig
 
-        # app structure
-        
-          *  public folder {"=>"} for assets which is accessible by users ( css , js , imgs )
-              -  to access files in public we must use {/* =>> */} express.static( ) function
-        
-
-        # views
-        
-          *  express template engines are ( EJS --- pug --- handlebars  )
-            - they are used as external packages and have their own docs
-          
-        # websocket => establish a listening channel for server updates
-          * use socket.io package on client & server sides      
-
-        # graphQL ( package used with many languages not only js )
-          * a special pattern to make API like MVC 
-          * frontend developer can customize returned response ( full query language for client ) 
-          * default use is to handle json data only ( not files )
-            - save the image first on server then the user uses the image url
-          * stateless api with higher priority flexibility
-          * uses schema ( for routing )  && resolvers ( for controllers )
-          * uses one endpoint with POST method for the data ( detect responses from request body )
-          * typed language  
-            - operation types ( Query for GET method & database getting - Mutation for other methods & database editing - subscription for websocket connections  )
-          * can be tested using postman or using a feature in it enable graphical GUI like docs for your api 
+  * app.set('view engine' , 'ejs')
 
 
-          # Deployment Notes 
-            $ detect your node version in package.json using "engine" keyword
-            $ packages ( for hosting provides without service management )
-              * helmet package to add security headers to your response 
-              * compression to reduce size of assets ( css , js , imgs )  in response 
-              * morgan to make logging for server requests
-              * search for manually apply SSL certificate on your app
-          
-          # suggested hosting providers :
-            * heroku
-            * digitalocean
-            * aws
-            * vercel
+# dependencies
+
+  * use --save with development & production dependencies  ( default )
+  &nbsp; &nbsp; but use --save-dev for development dependencies
+
+
+#  packages  ( almost every thing is via package )
+
+  * express
+  * nodemon
+  * body-parser
+  * morgan => logging & error handler 
+  * multer => file handler 
+  * sharp => image processing ( resize - change format or quality - ... )
+
+# routing
+
+  * using “use( “/” , {"() => "}  ) “  represent fallback for all paths , but if use get method if specify
+  * in linux file paths is “folder/file” but in windows “folder\file”  SO we use sendFile( path.join( __dirname , “folder” , “file” ) )
+  {"// dirname is path of current file"}
+  {"// and you can make rootpath.js in util folder to give you path of root file"}
+
+
+# app structure
+
+  *  public folder {"=>"} for assets which is accessible by users ( css , js , imgs )
+      -  to access files in public we must use {/* =>> */} express.static( ) function
+
+
+# views
+
+  *  express template engines are ( EJS --- pug --- handlebars  )
+    - they are used as external packages and have their own docs
+  
+# websocket => establish a listening channel for server updates
+  * use socket.io package on client & server sides      
+
+# graphQL ( package used with many languages not only js )
+  * a special pattern to make API like MVC 
+  * frontend developer can customize returned response ( full query language for client ) 
+  * default use is to handle json data only ( not files )
+    - save the image first on server then the user uses the image url
+  * stateless api with higher priority flexibility
+  * uses schema ( for routing )  && resolvers ( for controllers )
+  * uses one endpoint with POST method for the data ( detect responses from request body )
+  * typed language  
+    - operation types ( Query for GET method & database getting - Mutation for other methods & database editing - subscription for websocket connections  )
+  * can be tested using postman or using a feature in it enable graphical GUI like docs for your api 
+
+
+  # Deployment Notes 
+    $ detect your node version in package.json using "engine" keyword
+    $ packages ( for hosting provides without service management )
+      * helmet package to add security headers to your response 
+      * compression to reduce size of assets ( css , js , imgs )  in response 
+      * morgan to make logging for server requests
+      * search for manually apply SSL certificate on your app
+  
+  # suggested hosting providers :
+    * heroku
+    * digitalocean
+    * aws
+    * vercel
         `}
 
       </pre>
