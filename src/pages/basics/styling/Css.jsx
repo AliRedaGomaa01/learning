@@ -66,6 +66,7 @@ let Css = () => (
     $ grid 
 
 # property notes
+  * variables => :root {--blue: #1e90ff;} .container {color: var(--blue);} // we can manipulate it using javascript
   * text-shadow  &&& box-shadow
   * cursor
   * text-shadow VS   box-shadow: 0 0 10px 5px lightblue, 0 0 15px 10px black;  

@@ -7,6 +7,8 @@ let WebBasics = () => (
       # action when element is on viewport ( seen )
       # super global variables => $_ENV
       # protocol://domainName-OR-ip:port/resource /* https port 443 */
+      # events :
+        * @keyup @keydown @click.prevent  @mouseover @mousemove
       # inspect tool has very powerful options  
         * offline service worker in networks tab 
         * slow speed connection

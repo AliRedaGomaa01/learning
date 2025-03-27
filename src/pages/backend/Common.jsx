@@ -28,6 +28,7 @@ export default function Common() {
     - env variables for values changes based on environment & secret values
     - logging for http requests ( ex. morgan in express ) 
   * we must reform & refactor data before sending it as api to protect sensitive data ( laravel resource )
+  * there are some prepared validation but you also can make you custom ones   
 
 ### basics topics
 

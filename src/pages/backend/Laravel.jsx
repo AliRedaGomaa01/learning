@@ -4,6 +4,11 @@ export default function Laravel() {
       {`
 
 #  important info
+  * life cycle 
+    - composer autoload
+    - bootstrap/app.php
+    - service container
+    - http kernels & console kernels 
   * install php extension in ubuntu  => sudo apt-get install php8.2-dom
   * recommended => 'starter kit' 
   * update env.example continuously
@@ -111,6 +116,11 @@ export default function Laravel() {
   * always use try{}catch(){} && DB::beginTransaction() DB::commit() DB::rollback()  with db insert & update queries
   * action([UserController::class, 'profile'], ['id' => 1]);  / get the uri of the function
   * (new UserController)->store();  // call a function in a controller
+  * $validator = Validator::make($request->all(), $rules);
+    - if ($validator->fails()) { return redirect('post/create')->withErrors($validator)->withInput();}
+    - you can add new error messages with key value &&& can put them under bag 'key' &&& can customize messages 
+    - or you can customize the response of this specific type error 
+
 
       
       `}

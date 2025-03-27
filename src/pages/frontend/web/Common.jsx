@@ -12,6 +12,7 @@ export default function Common() {
   * reactive live without reloading with state => using js proxies
   * Teleporting => changing component rendering place in the DOM.
   * remember Astro.js => SSR frontend framework
+  * dispatch  OR emit new event 
   
   * the build process enhances code 
     - build tools ( webpack ex. react-scripts  ***  vite )

@@ -16,9 +16,7 @@ export default function React() {
     - it's is common between all instants with the value of first render & not updated when component reload 
     - BUT when defining inside component using refs define variable onmounting only without redefining on rerendering 
   * key attribute is used with loops and used to rerendered when it changes dynamically ( Do not use array index !!! )
-  *
-
-
+  * there is difference between React onClick={} && DOM onclick="" 
 
 # data sharing 
   
