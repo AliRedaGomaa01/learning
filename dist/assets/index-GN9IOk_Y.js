@@ -360,10 +360,12 @@ I only use design as a tool in web development
 ************************************************************************************************
 
 # figma
-  * UI/UX process steps :
+  * UI/UX process steps ( make your service design depends on the client usage experience & successful competitors ) :
     1- making docs for brain storm ideas & tech. requirements 
       $ [ UX ] [ priority to real user { people interview & survey } ] 
     2- sketching & designing  
+
+  * depends on frames inside sections 
   
   *  info :
     - multiple components ( reusable instances “parts” ) [ switch between its items ] - detach -   instance
@@ -1832,6 +1834,14 @@ I only use design as a tool in web development
     - if ($validator->fails()) { return redirect('post/create')->withErrors($validator)->withInput();}
     - you can add new error messages with key value &&& can put them under bag 'key' &&& can customize messages 
     - or you can customize the response of this specific type error 
+  * performace : 
+    - eager loading & lazy loading 
+    - use query cache ( redis ) 
+    - use pagination & filter & search features in your tables
+    - indexing & unique 
+    - telescope & debugbar 
+
+
 
 
       
@@ -1871,6 +1881,7 @@ I only use design as a tool in web development
   * ORM & 3rd libraries : sequelize library with mysql2 library ( SQL )
   * ODM (Object Document Mapper) : Mongoose ( NSQL )
   * Sequelize & Mongooose has their own doc.
+  * we use mongoose middleware to make actions on database events like save and update and get  
   * when using mongoose 
     - the schema in the model file is for ODM 
     - not for the database because its schemaless

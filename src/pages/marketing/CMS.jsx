@@ -7,7 +7,7 @@ let CMS = () => (
 
 # Wordpress ( .org NOT .com )  : 
   * xxamp ( loaclhost/folder ) ( loaclhost/folder/wp-login ) 
-  * themes & customize & widgets 
+  * themes  (Sydney theme) & customize & widgets 
   * pages & posts & categories 
   * plugins  ( all backend tasks  ) ( woocommerce plugin — betheme shop theme ) 
     - ( for any feature you want [ front or back or any ] search in it Ex. =>  payment - orders - form - ... )

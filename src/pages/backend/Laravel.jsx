@@ -120,6 +120,14 @@ export default function Laravel() {
     - if ($validator->fails()) { return redirect('post/create')->withErrors($validator)->withInput();}
     - you can add new error messages with key value &&& can put them under bag 'key' &&& can customize messages 
     - or you can customize the response of this specific type error 
+  * performace : 
+    - eager loading & lazy loading 
+    - use query cache ( redis ) 
+    - use pagination & filter & search features in your tables
+    - indexing & unique 
+    - telescope & debugbar 
+
+
 
 
       

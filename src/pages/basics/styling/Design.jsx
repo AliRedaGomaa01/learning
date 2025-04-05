@@ -12,10 +12,12 @@ I only use design as a tool in web development
 ************************************************************************************************
 
 # figma
-  * UI/UX process steps :
+  * UI/UX process steps ( make your service design depends on the client usage experience & successful competitors ) :
     1- making docs for brain storm ideas & tech. requirements 
       $ [ UX ] [ priority to real user { people interview & survey } ] 
     2- sketching & designing  
+
+  * depends on frames inside sections 
   
   *  info :
     - multiple components ( reusable instances “parts” ) [ switch between its items ] - detach -   instance

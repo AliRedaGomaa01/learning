@@ -7,6 +7,7 @@ export default function Express() {
   * ORM & 3rd libraries : sequelize library with mysql2 library ( SQL )
   * ODM (Object Document Mapper) : Mongoose ( NSQL )
   * Sequelize & Mongooose has their own doc.
+  * we use mongoose middleware to make actions on database events like save and update and get  
   * when using mongoose 
     - the schema in the model file is for ODM 
     - not for the database because its schemaless
