@@ -59,17 +59,30 @@ export default function Vue() {
   * depending on => setup(  ) {  return { } }  
   * at it => ref is reactive because there are no reference data 
   * computed properties is considered refs  
-  * items in reactive objects are not reactive but we can convert them to refs using toRefs or computed property  Ex. myObj.name ×  props.key × 
+  * items in reactive objects are not reactive 
+    - but we can convert them to refs using toRefs or computed property  
+    - Ex. myObj.name  props.key  NOT CORRECT 
 
 
-# VueX:
+    
+# State :
+    
+  * in composition api :
+    - ref for primary value [ string , number ]  
+    - reactive for reference value [ object , array , function ]   
+  * in options api :
+    - data already is reactive 
+  * VueX:
+    - uses createStore  - state() { return { data1 : val1 } } 
+    - mutations: { fn1 () { } } getters: { fn1 () { } } $store.commit()  
+    - actions: { fn1 () { } }  $store.dispatch()
+    - modules for global state files 
+    - namespace to call nested stored by its module name
+  * performance :
+    - computed property to reduce rerendering  { functions return property }
+    - many rerender => watch('refval', code ) , watchEffect( code and monitor all dependencies changes )
 
-  * uses createStore  - state() { return { data1 : val1 } } 
-  * mutations: { fn1 () { } } getters: { fn1 () { } } $store.commit()  
-  * actions: { fn1 () { } }  $store.dispatch()
-  * modules for global state files 
-  * namespace to call nested stored by its module name
-
+    
 # Routing :
 
   * registering -  <router-view> <router-link> - nested routes & children - route name - pages folder -  fallback route

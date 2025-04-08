@@ -51,8 +51,8 @@ let Github = () => (
     init
 
     config user.name // get git name 
-    config –global user.name “Your Git Name” // set git name globally
-    config –global user.email “Your Git Email”
+    config --global user.name “Your Git Name” // set git name globally
+    config --global user.email “Your Git Email”
 
     status // files status
 
@@ -123,10 +123,10 @@ let Github = () => (
     
     // reset used with local changes 
     reset <commit-hash>  // delete commits after it and put its changes in unstaged
-    reset –hard <commit-hash>  // delete commits after it and delete commits' changes
+    reset --hard <commit-hash>  // delete commits after it and delete commits' changes
     // undo all staged and unstaged changes : 
-    git reset --hard HEAD
-    git reset --hard origin/main
+    reset --hard HEAD
+    reset --hard origin/main
 
 
     // revert used with remote changes 
@@ -135,14 +135,14 @@ let Github = () => (
     // rebasing is used to rewrite history ( merging tool or cleanup tool ) 
     /** 
       * commits of current branch will not be added to other branch  
-        but commits of current branch will be rewritten to be on tip of the other branch’s commits in the current one only 
+        but commits of current branch will be rewritten to be on tip of the other branch's commits in the current one only 
       * hash of commits of current will be changes
-      * don’t rebase commits that pushed to github because others may have used it
+      * don't rebase commits that pushed to github because others may have used it
       * interactive rebase enable you to manipulate commits in history like rename or delete or merge  
         ( pick to remain as it OR reword to rename OR fixup to merge with previous and delete previous )
     */
 
-    rebase <other-branch>  // rewrite current branch’s commits from other
+    rebase <other-branch>  // rewrite current branch's commits from other
     rebase -i HEAD~4  // go to interactive mode 4 commits before end in HEAD
 
 ************************************************************************************************ 
@@ -202,12 +202,12 @@ pull request to GUI merging on github
 We can make branch protection roles 
 
 Fork
-  Github can make personal copy of other’s repo and this copy is called fork and is able to make pull request between the two repositories.
+  Github can make personal copy of other's repo and this copy is called fork and is able to make pull request between the two repositories.
   and you can pull from the original origin repo then push to fork upstream repo and pull request from fork to original
 
 .gitignore 
   file.txt
-  folder/  // all directory  &&& if write without ‘/’ will consider it a file  
+  folder/  // all directory  &&& if write without '/' will consider it a file  
   *.css   // all css files 
 
 markdown
@@ -220,7 +220,7 @@ markdown
 
 semantic version release number : majorRelease.minorRelease.patchRelease
 
-Hashing is one-way function ex “ali” => converted always to “ASFADGFAGFAGF” but “ASFADGFAGFAGF” can’t converted to ali 
+Hashing is one-way function ex “ali” => converted always to “ASFADGFAGFAGF” but “ASFADGFAGFAGF” can't converted to ali 
 
 Git used SHA-1  40 digits Hexa
 

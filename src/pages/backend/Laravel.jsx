@@ -26,53 +26,8 @@ export default function Laravel() {
     - for  apache  => execute phpinfo() in your laravel code or tinker
     - for terminal CMD => execute php -ini in your terminal  
 
-*****************
 # php :
-*****************
   * super global variables => $_ENV $_GET $_SERVER 
-  * 
-
-*****************
-# frontend  ( search for laravel docs Blade ) :
-*****************
-  * laravel has blade template engine &&& ( livewire - albine ) as frontend libraries
-  * inertia ( react - vue ) => $page.props   OR usePage().props 
-    - preserve state => means not to update ( inputs - props ) 
-    - <Head>  <title> my title</title> <meta /> </Head>
-    - HandleInertiaRequests => middleware to share data between all inertia pages // like share between views in AppServiceProvider 
-    - in script usePage() but in template {{ $page }} 
-    - <Link href="/logout" method="post"  :data="{ foo: bar }"  preserve-state preserve-scroll 
-      :class="$'{' $page.url === '/users' || $page.component === 'Users/Index' ? 'active' : '' }"> Logout </Link>
-    - use router library to navigate & send requests
-      $ router.visit(url, options including Method )
-      $ router options 
-          { method: 'get',   data: {},   replace: false,  forceFormData: true,   
-          preserveScroll: false,   only: [],   headers: {},   
-          onBefore: () => confirm('Are…?') , onProgress: progress => {}, 
-          onSuccess: page => {} ,  onError: errors => {}} 
-
-  * blade template engine :
-    - {{ request()->routeIs('dashboard') ? “active” : "" }}  // returns text
-    - {!! $user->isAdmin ? 'checked' : '' !!} // returns html
-    - directives ==>> 
-      - @php 
-      - @extend @include('posts.index' , [ 'posts' => $posts ] ) 
-      - @stack & @push & @perpend 
-        $ use with styles & scripts
-        $ may used as a teleport & send a part to other place 
-      - @section & @yield use with layouts & views
-      - @csrf @method('patch')
-      - @if @error @endif @foreelse @empty @can 
-      - @foreach( $arr as $key => $val ) @while(true)  
-        $ @continue(true) @break(true)  $loop->index $loop->count 
-      - {{string}} {!! htmlCode !!}
-    * escaping ==>> @@if()  ::class    
-    * <script> var app = JSON.parse( <?php echo json_encode($array); ?> );  </script>
-    * Active Nav Link => if ($request->is('admin/*')) if ($request->routeIs('admin.*')) 
-
-    * return Inertia::render('Post/Show', [  'post' => $post->only(   'id',    'title',   ), 
-      'edit_url' => route('posts.edit', $post),  'canEdit' => auth()->id() === $post->user_id ]);
-    // returned data is visible in the client console ,,  less data means load faster & more secure
 
 #  some error handling  :
   * composer dump-autoload  // errors can't find or resolve file
@@ -126,6 +81,15 @@ export default function Laravel() {
     - use pagination & filter & search features in your tables
     - indexing & unique 
     - telescope & debugbar 
+
+# validation  : 
+  * sending specific errors to frontend
+  * Validator::make() && $validator->fails(); &&  $validator->validated();
+
+
+# localization : 
+  * php artisan lang:publish { errors & etc }
+  * packages => laravel lang && laravel translatable
 
 
 
