@@ -16,14 +16,14 @@ export default function Vue() {
 
 # directives : 
 
-  * v-model “2 way binding” * v-once ”no listen to value update” 
+  * v-model “2 way binding” * v-once ”no listen to value update”
+    $ checkbox & multi select from official docs in form
   * v-bind:attr :attr 
-  * v-on:click @click 
-  * v-for 
+  * v-on:click @click - @submit.prevent=”” {default action => reload}
+  * v-for & :key
   * v-if * v-else-if * v-else * v-show 
   * v-text * v-html 
   * refs 
-  * 
 
 # passing data  :  
 

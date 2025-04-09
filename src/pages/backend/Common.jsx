@@ -89,7 +89,8 @@ export default function Common() {
       - requests without storing in => session or cache  or cookie
       - data in request & response are in json  
     * use CSRF for fullstack app with non GET requests (gives 419 error code)
-      - csrf ensures that the request came from your website not from another fake website ( not optional )
+      - csrf ensures that the request came from your website 
+        $ not from another fake website ( not optional )
       - CORS is used 
         $ when the front & the back are not on the same domain  
         $ for RESTfull app to validate frontend request's ( domain - method - headers)

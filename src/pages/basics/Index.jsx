@@ -19,13 +19,13 @@ export default function Index() {
     'Theoretical',
     'Design',
     'Css', 
-    'Bootstrap',
     'Tailwind',
-    'Sass',
     'OOP',
     'Javascript',
     'Typescript',
   ];
+  // 'Bootstrap',
+  // 'Sass',
   
   const [selectedItem , setSelectedItem] = useState('Web Basics');
 

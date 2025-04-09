@@ -85,7 +85,23 @@ export default function Laravel() {
 # validation  : 
   * sending specific errors to frontend
   * Validator::make() && $validator->fails(); &&  $validator->validated();
-
+  * top rules : 
+    - 'regex:/^[A-Za-z]+$/'
+    - 'regex:/^[{Arabic}]+$/u'
+    - 'not_regex:/^.+$/i' 
+  * other rules : 
+    - nullable , missing, present , sometimes { means apply other rules if presented & can be missed }
+    - 'required' , 'required_if:inputName,value'
+    - accepted , declined , 'string' , 'email' 
+    - 'boolean' , 'json' , 'array' , 'numeric'
+    - 'file' , 'image' , 'size:2048', 'extensions:jpg,png', 'mimes:jpg,png'
+    - 'in:enum1,enum2', 'not_in:foo,bar' 
+    - 'exists:table,column' ,  'unique:table,column'  
+    - 'max:num' , 'min:num' , 'in:val1,val2'  
+    - 'end_date' => 'required|date|date_format:Y-m-d',
+    - 'url' => 'url:http,https',
+    - confirm password : 
+      $ 'password'=>'confirmed'  && input name : password_confirmation 
 
 # localization : 
   * php artisan lang:publish { errors & etc }

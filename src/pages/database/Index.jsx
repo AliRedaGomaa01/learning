@@ -8,10 +8,10 @@ import Laravel from './Laravel';
 export default function Index() {
   const list = [
     'Common',
-    'Django',
     'Express',
     'Laravel',
   ];
+  // 'Django',
   
   const [selectedItem , setSelectedItem] = useState('Common');
 

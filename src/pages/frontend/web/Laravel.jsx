@@ -45,7 +45,12 @@ export default function Laravel() {
       'edit_url' => route('posts.edit', $post),  'canEdit' => auth()->id() === $post->user_id ]);
     // returned data is visible in the client console ,,  less data means load faster & more secure
 
-    * @foreach ($errors->all() as $key => $error)
+    * @foreach ($errors->all() as $key => $error).
+
+    * forms : 
+      - <input type="hidden" name="_token" value="{{ csrf_token() }}">  	 
+      - <input type="hidden" name="_method" value="PUT">		
+      -  input names - input errors - value="{{ old('username') }} 
       
       `}
     </pre>

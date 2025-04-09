@@ -8,10 +8,10 @@ import Laravel from './Laravel';
 export default function Index() {
   const list = [
     'Common',
-    'Django',
     'Express',
     'Laravel',
   ];
+  // 'Django',
   
   const [selectedItem , setSelectedItem] = useState('Common');
 
@@ -20,7 +20,7 @@ export default function Index() {
       <Nav list={list} selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
 
       { selectedItem === "Common" &&  <Common /> }
-      {/* { selectedItem === "Django" &&  <Django /> } */}
+      { selectedItem === "Django" &&  <Django /> }
       { selectedItem === "Express" &&  <Express /> }
       { selectedItem === "Laravel" &&  <Laravel /> }
 
