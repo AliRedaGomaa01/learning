@@ -18,6 +18,7 @@ export default function Vue() {
 
   * v-model “2 way binding” * v-once ”no listen to value update”
     $ checkbox & multi select from official docs in form
+    $ v-model:lazy "modifiers" 
   * v-bind:attr :attr 
   * v-on:click @click - @submit.prevent=”” {default action => reload}
   * v-for & :key

@@ -84,22 +84,30 @@ export default function Laravel() {
 
 # validation  : 
   * sending specific errors to frontend
-  * Validator::make() && $validator->fails(); &&  $validator->validated();
+  * Validator::make( $request->all(), $rules , $customMessages ) && $validator->fails(); &&  $validator->validated();
   * top rules : 
+    - custom rule function  
     - 'regex:/^[A-Za-z]+$/'
     - 'regex:/^[{Arabic}]+$/u'
     - 'not_regex:/^.+$/i' 
-  * other rules : 
+  * other rules ( search for laravel validation rules ) : 
     - nullable , missing, present , sometimes { means apply other rules if presented & can be missed }
     - 'required' , 'required_if:inputName,value'
+    - exclude_if:has_appointment,false // means don't make validation for it 
     - accepted , declined , 'string' , 'email' 
     - 'boolean' , 'json' , 'array' , 'numeric'
     - 'file' , 'image' , 'size:2048', 'extensions:jpg,png', 'mimes:jpg,png'
     - 'in:enum1,enum2', 'not_in:foo,bar' 
-    - 'exists:table,column' ,  'unique:table,column'  
+    - 'exists:table,column' ,  'unique:table,column'  ((( makes a query from the database )))
     - 'max:num' , 'min:num' , 'in:val1,val2'  
     - 'end_date' => 'required|date|date_format:Y-m-d',
     - 'url' => 'url:http,https',
+    - 'array.key1' => required|string;
+    - 'images' => required|array;
+    - 'images' => required|array:key1,key2; means must has only those keys 
+    - 'images.*' => 'required|image|max:2048|mimes:gif,jpg,jpeg,svg,webp|dimensions:ratio=1/1';
+    - 'person.*.email' => 'email|unique:users',
+    - size:12  , max , min  // with integer means digits & with array means length & with files means file size
     - confirm password : 
       $ 'password'=>'confirmed'  && input name : password_confirmation 
 

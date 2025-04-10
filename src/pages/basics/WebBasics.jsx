@@ -15,6 +15,12 @@ let WebBasics = () => (
         * network to get request info
       # debug mode & debug side bar & debug console
         * in VSCode used for debugging in front & back & any code
+      # form best practices  
+        - autocomplete 
+        - confirm deletion alert 
+        - show error & validation messages 
+        - show success message 
+        - show loading message
 
       # software requirement specifications (SRS)
 
@@ -38,6 +44,9 @@ let WebBasics = () => (
           - runtime  
         * usually without message
           - logical 
+
+      # code notes :
+        * <input> & <datalist>  to make autocomplete or searchable select
 
   `}
   </pre>

@@ -75,7 +75,7 @@ export default function Common() {
   * Authentication  && security
     - middleware {/* => */} auth (api or web) & guest & throttle
     - password validation rules
-    - password hashing
+    - password hashing ( & compare with hashed )
     - Admin multi Auth
     - API Auth && CORS
     - 3-party auth ( facebook - google )
