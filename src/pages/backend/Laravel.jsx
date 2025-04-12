@@ -83,7 +83,8 @@ export default function Laravel() {
     - telescope & debugbar 
 
 # validation  : 
-  * sending specific errors to frontend
+  * sending specific errors to frontend (custom error messages)
+  * you must specify specific min & max for each field 
   * Validator::make( $request->all(), $rules , $customMessages ) && $validator->fails(); &&  $validator->validated();
   * top rules : 
     - custom rule function  
@@ -108,8 +109,19 @@ export default function Laravel() {
     - 'images.*' => 'required|image|max:2048|mimes:gif,jpg,jpeg,svg,webp|dimensions:ratio=1/1';
     - 'person.*.email' => 'email|unique:users',
     - size:12  , max , min  // with integer means digits & with array means length & with files means file size
+    - Rule::exists('staff')->where(function (Builder $query) {return $query->where('account_id', 1);}),
+    - Rule::unique('users' , 'email_address')->ignore($this->id , 'columnName')->where(function (Builder $query) {return $query->where('account_id', 1);}),  
+      $ $this->id refers to request()->id  may be $this->anyAttribute
+      $ ignore must be used to ignore current value on update
     - confirm password : 
       $ 'password'=>'confirmed'  && input name : password_confirmation 
+    - Password::min(8)
+        ->letters()
+        ->numbers()
+        ->symbols()
+        ->mixedCase()
+        ->uncompromised()
+
 
 # localization : 
   * php artisan lang:publish { errors & etc }

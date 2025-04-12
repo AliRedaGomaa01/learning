@@ -21,6 +21,18 @@ let WebBasics = () => (
         - show error & validation messages 
         - show success message 
         - show loading message
+        - remember enctype=”multipart/form-data” when sending files in forms ( $_FILES )
+        - preview image before uploading
+          <form> 
+            <input type="file" onchange="preview()"> 
+            <img id="frame" src="" width="100px" height="100px"/> 
+          </form>
+          function preview() { frame.src=URL.createObjectURL(event.target.files[0]); }
+        - to customize upload input style 
+          $ input::file-selector-button {  } 
+          $ OR make a hidden file input & custom visible element with js  
+
+
 
       # software requirement specifications (SRS)
 

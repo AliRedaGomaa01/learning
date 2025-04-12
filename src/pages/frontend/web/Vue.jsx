@@ -14,11 +14,26 @@ export default function Vue() {
   * special global variables : $route $router $events $refs
   * computed properties : methods that use cache and are rerendered only when dependencies change {{ myComputed }}  BUT this <p>{{ normalMethod() }}<p> is rerendered on every change 
 
+# forms :
+  - <form @submit.prevent="submit">
+  - const destroy = (id) => if( confirm( ' Are you sure ? ') ) 
+    { Inertia.delete(route( 'posts.destroy' , id )
+  - we must send files with POST Not PATCH & use @change="getFile" not @change="getFile()"
+  <input type="file" id="file" @change="getFile" accept="image/*">
+      const getFile = (e)=>{form.file = e.target.files[0]};
+      const submit = (e) => {
+          form.submit('post','/t',{preserveScroll:true , 
+          onSuccess: form.reset(),
+          forceFormData:true,
+      });
+
+
+
 # directives : 
 
   * v-model “2 way binding” * v-once ”no listen to value update”
     $ checkbox & multi select from official docs in form
-    $ v-model:lazy "modifiers" 
+    $ v-model:lazy "modifiers"
   * v-bind:attr :attr 
   * v-on:click @click - @submit.prevent=”” {default action => reload}
   * v-for & :key
@@ -63,8 +78,6 @@ export default function Vue() {
   * items in reactive objects are not reactive 
     - but we can convert them to refs using toRefs or computed property  
     - Ex. myObj.name  props.key  NOT CORRECT 
-
-
     
 # State :
     
