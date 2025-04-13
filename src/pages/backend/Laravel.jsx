@@ -17,11 +17,6 @@ export default function Laravel() {
   * seeding & factories ( Faker ) 
   * request files to validate request data 
   * queues => background jobs & tasks ( async )
-  * inertia prevents 
-    - two repos on github 
-    - subdomain for front or back 
-    - ssr & perfect meta tags 
-    - no api & postman time )
   * to reach php.info location 
     - for  apache  => execute phpinfo() in your laravel code or tinker
     - for terminal CMD => execute php -ini in your terminal  

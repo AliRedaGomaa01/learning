@@ -7,6 +7,11 @@ export default function Laravel() {
 # frontend  ( search for laravel docs Blade ) :
 *****************
   * laravel has blade template engine &&& ( livewire - albine ) as frontend libraries
+  * inertia prevents 
+    - two repos on github 
+    - subdomain for front or back 
+    - ssr & perfect meta tags 
+    - no api & postman time )
   * inertia ( react - vue ) => $page.props   OR usePage().props 
     - preserve state => means not to update ( inputs - props ) 
     - <Head>  <title> my title</title> <meta /> </Head>

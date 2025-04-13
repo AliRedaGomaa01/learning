@@ -9,6 +9,7 @@ import Vue from './web/Vue';
 import Angular from './web/Angular';
 import Flutter from './mobile/Flutter';
 import ReactNative from './mobile/ReactNative';
+import Laravel from './web/Laravel';
 
 export default function Index() {
   const list = [
@@ -18,6 +19,7 @@ export default function Index() {
     'Next',
     'Vue',
     'Angular',
+    'Laravel',
     'Common Mobile',
     'Flutter',
     'React Native',
@@ -36,6 +38,7 @@ export default function Index() {
       { selectedItem === "Next" &&  <Next /> }
       { selectedItem === "Vue" &&  <Vue /> }
       { selectedItem === "Angular" &&  <Angular /> }
+      { selectedItem === "Laravel" &&  <Laravel /> }
       { selectedItem === "Flutter" &&  <Flutter /> }
       { selectedItem === "React Native" &&  <ReactNative /> }
 
