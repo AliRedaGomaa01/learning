@@ -117,12 +117,16 @@ export default function Laravel() {
         ->mixedCase()
         ->uncompromised()
 
-
 # localization : 
   * php artisan lang:publish { errors & etc }
   * packages => laravel lang && laravel translatable
 
-
+# forms : 
+  * images & files :
+    - empty file input scenario OR replace old one scenario
+    - override deleting to delete the files with the record deletion if exists
+    - make file system driver config => public
+    - search for best code to rename image file  
 
 
       

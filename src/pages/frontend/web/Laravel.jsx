@@ -15,7 +15,10 @@ export default function Laravel() {
   * inertia ( react - vue ) => $page.props   OR usePage().props 
     - preserve state => means not to update ( inputs - props ) 
     - <Head>  <title> my title</title> <meta /> </Head>
-    - HandleInertiaRequests => middleware to share data between all inertia pages // like share between views in AppServiceProvider 
+    - HandleInertiaRequests => middleware to share data between all inertia pages  like  
+      $ share between views in AppServiceProvider
+      $ may be used to pass flash messages
+      $ $page.props.flash.message  OR usePage().props.flash.message
     - in script usePage() but in template {{ $page }} 
     - <Link href="/logout" method="post"  :data="{ foo: bar }"  preserve-state preserve-scroll 
       :class="$'{' $page.url === '/users' || $page.component === 'Users/Index' ? 'active' : '' }"> Logout </Link>

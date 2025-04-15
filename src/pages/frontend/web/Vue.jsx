@@ -49,7 +49,7 @@ export default function Vue() {
   * to parent => by emitting custom events 
   * provide & inject ( ex. functions & object  ) // to send data to all descendants
   * VueX or Pinia  ( global state manager )
-  * global components 
+  * making components global  
   * custom plugins ( to share data between all components [options api only] )
 
 # lifeCycle :  

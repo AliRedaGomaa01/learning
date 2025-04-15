@@ -9,6 +9,7 @@ export default function Common() {
     - integrate secret 3rd apis 
     - implement complex secret logic
   * the best practice is to reduce request numbers & reduce response size
+  * multi tenancy  means the same code with separate database records for each client
   * Huge data quantity not affect as text but as UI rendering
   * queues & job & schedules tasks & cron jobs
   * thin controllers &&& fat models  
