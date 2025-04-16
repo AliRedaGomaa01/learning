@@ -762,13 +762,15 @@ I only use design as a tool in web development
   * can write specific code for each platform
 `})}function Zf(){return C.jsx("pre",{children:`      
 # basic info :
+  * MVVM
+  * SPA Single Page Application , SFC Single File Component
   * most FE frameworks uses CLI 
   * async http request ( Ajax )
   * component life cycle  ( we must destroy continuous tasks before component is destroyed)
   * lazy loading ( route path component - assets  )
   * parent fragment is preferred
-  * interactive immediately response 
-  * reactive live without reloading with state => using js proxies
+  * interactive => respond to user actions 
+  * reactive live  immediately response  without reloading with state => using js proxies
   * Teleporting => changing component rendering place in the DOM.
   * remember Astro.js => SSR frontend framework
   * dispatch  OR emit new event 
@@ -986,6 +988,9 @@ I only use design as a tool in web development
 
   * has many built in declarative tools ( low usage of 3rd packages ) 
   * ( options - composition ) API Types
+    - we use "this" keywords many times in option api unlike composition "this" is not defined
+    - composition uses ref & reactive 
+    - setup is executed in life cycle  before ( created & mounted ) 
   * using <template> & <script setup > & <style scoped>
   * event modifiers : @click.prevent=”” @click.stop="" @keyup.enter=””
   * watchers  =>  computed , watch , watchEffect
@@ -1032,7 +1037,7 @@ I only use design as a tool in web development
   * making components global  
   * custom plugins ( to share data between all components [options api only] )
 
-# lifeCycle :  
+# lifeCycle hooks:  
 
   * (beforecreate - create )< replace by setup( ) > - beforemount 
   * mounted , beforeupdated , updated 
@@ -1689,6 +1694,7 @@ I only use design as a tool in web development
     - use both client & server validation :  client reduces requests to server but it's overridable 
     - it's impossible to prevent hacking 100% but we try to make it more difficult & requires higher skills
     - don't take user input in a script area ( sql injection - html & js script ) 
+    - recaptcha  ( robotic attack )
   
   # API 
     * might be for mobile app OR Single Page web app OR service
@@ -1879,7 +1885,8 @@ I only use design as a tool in web development
   * debugbar
   * telescope
   * trans
-  * spatia ( media -  )
+  * socialite
+  * spatia ( media - multi tenant  )
   * breeze & jetstream
   * passport & sanctum
   * Carbon ( data & time ) [ diffForHumans ] 
@@ -1892,6 +1899,7 @@ I only use design as a tool in web development
   * amazon aws s3 
   * chart.js charts  
   * datatables.js features for tables   
+  * filament ( for admin panels )
 
   
 # code tips & tricks :
@@ -1964,8 +1972,12 @@ I only use design as a tool in web development
     - make file system driver config => public
     - search for best code to rename image file  
 
+# security :
+  * gates & policies & abort_if() abort()
+  * APP_KEY in .env is responsible for encrypt & decrypt
+  * guards => Auth::guard('admin')->check()z  middleware('auth:admin')
 
-      
+
       `})}function fp(){const l=["Common","Express","Laravel"],[u,s]=_.useState("Common");return C.jsxs(C.Fragment,{children:[C.jsx(mn,{list:l,selectedItem:u,setSelectedItem:s}),u==="Common"&&C.jsx(sp,{}),u==="Django"&&C.jsx(up,{}),u==="Express"&&C.jsx(cp,{}),u==="Laravel"&&C.jsx(dp,{})]})}function pp(){return C.jsx("pre",{children:`
 # Basics Info
   * you can download SQL server on you machine OR get it as software service like XXAMP , LARAGON
@@ -2025,11 +2037,12 @@ I only use design as a tool in web development
   * we validate that id is mongoId type 
     `})}function gp(){return C.jsx("pre",{children:`
 # important info 
-  * we can use mongo DB with laravel & eloquent by using 3rd parties 
+  * we can use mongo DB with laravel & eloquent by using 3rd parties
 
 # code notes :
   * $book->isDirty('isbn') 
     - $category = new Category();  $category->name = $request->name  ;  $category->save() ;
+  * use User::query()->count(); NOT DB::table('users')->count(); NOT User::count(); 
 
       `})}function yp(){const l=["Common","Express","Laravel"],[u,s]=_.useState("Common");return C.jsxs(C.Fragment,{children:[C.jsx(mn,{list:l,selectedItem:u,setSelectedItem:s}),u==="Common"&&C.jsx(pp,{}),u==="Django"&&C.jsx(mp,{}),u==="Express"&&C.jsx(hp,{}),u==="Laravel"&&C.jsx(gp,{})]})}function vp(){return C.jsx("pre",{children:`
 # important info

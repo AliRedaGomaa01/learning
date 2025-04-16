@@ -43,7 +43,8 @@ export default function Laravel() {
   * debugbar
   * telescope
   * trans
-  * spatia ( media -  )
+  * socialite
+  * spatia ( media - multi tenant  )
   * breeze & jetstream
   * passport & sanctum
   * Carbon ( data & time ) [ diffForHumans ] 
@@ -56,6 +57,7 @@ export default function Laravel() {
   * amazon aws s3 
   * chart.js charts  
   * datatables.js features for tables   
+  * filament ( for admin panels )
 
   
 # code tips & tricks :
@@ -128,8 +130,12 @@ export default function Laravel() {
     - make file system driver config => public
     - search for best code to rename image file  
 
+# security :
+  * gates & policies & abort_if() abort()
+  * APP_KEY in .env is responsible for encrypt & decrypt
+  * guards => Auth::guard('admin')->check()z  middleware('auth:admin')
 
-      
+
       `}
     </pre>
   );

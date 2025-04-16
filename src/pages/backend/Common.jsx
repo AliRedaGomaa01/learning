@@ -83,6 +83,7 @@ export default function Common() {
     - use both client & server validation :  client reduces requests to server but it's overridable 
     - it's impossible to prevent hacking 100% but we try to make it more difficult & requires higher skills
     - don't take user input in a script area ( sql injection - html & js script ) 
+    - recaptcha  ( robotic attack )
   
   # API 
     * might be for mobile app OR Single Page web app OR service

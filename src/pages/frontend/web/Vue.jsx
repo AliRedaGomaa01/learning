@@ -6,6 +6,9 @@ export default function Vue() {
 
   * has many built in declarative tools ( low usage of 3rd packages ) 
   * ( options - composition ) API Types
+    - we use "this" keywords many times in option api unlike composition "this" is not defined
+    - composition uses ref & reactive 
+    - setup is executed in life cycle  before ( created & mounted ) 
   * using <template> & <script setup > & <style scoped>
   * event modifiers : @click.prevent=”” @click.stop="" @keyup.enter=””
   * watchers  =>  computed , watch , watchEffect
@@ -52,7 +55,7 @@ export default function Vue() {
   * making components global  
   * custom plugins ( to share data between all components [options api only] )
 
-# lifeCycle :  
+# lifeCycle hooks:  
 
   * (beforecreate - create )< replace by setup( ) > - beforemount 
   * mounted , beforeupdated , updated 

@@ -3,13 +3,15 @@ export default function Common() {
     <pre>
 {`      
 # basic info :
+  * MVVM
+  * SPA Single Page Application , SFC Single File Component
   * most FE frameworks uses CLI 
   * async http request ( Ajax )
   * component life cycle  ( we must destroy continuous tasks before component is destroyed)
   * lazy loading ( route path component - assets  )
   * parent fragment is preferred
-  * interactive immediately response 
-  * reactive live without reloading with state => using js proxies
+  * interactive => respond to user actions 
+  * reactive live  immediately response  without reloading with state => using js proxies
   * Teleporting => changing component rendering place in the DOM.
   * remember Astro.js => SSR frontend framework
   * dispatch  OR emit new event 
