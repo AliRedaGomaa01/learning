@@ -60,14 +60,17 @@ let Css = () => (
     $ margin auto
     $ dir 
     $ position 
-    $ inline-block 
+    $ inline & inline-block 
     $ float 
     $ flex 
     $ grid 
-
+    $ column-count
+    
 # property notes
   * variables => :root {--blue: #1e90ff;} .container {color: var(--blue);} // we can manipulate it using javascript
   * text-shadow  &&& box-shadow
+  * flex => wrap-reverse & row-reverse => to edit items order 
+  * not all properties & values are common between flex & grid  
   * cursor
   * text-shadow VS   box-shadow: 0 0 10px 5px lightblue, 0 0 15px 10px black;  
     // blur : pixeled background color   // spread : all area increase  

@@ -2,7 +2,7 @@ let CMS = () => (
   <pre>{
 `     
 # General : 
-  * be aware when use addons – beware of hackers
+  * be aware when use addons - beware of hackers
   * All their idea => make website using GUI with zero code
 
 # Wordpress ( .org NOT .com )  : 

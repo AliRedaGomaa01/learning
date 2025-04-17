@@ -4,6 +4,9 @@ let SEO = () => (
 * use server side rendering 
   - inertia => semi server side rendering 
 * use all possible meta tags 
+* results depends on : 
+  - history & cookies SO use incognito
+  - location in browser setting & language  
 * follow best practices
 * make website responsive 
 * use SEO measurement tools

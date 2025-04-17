@@ -5,6 +5,7 @@ let WebBasics = () => (
         - make it separated from html code  
         - client logic can be reached by user   
       # action when element is on viewport ( seen )
+      # each software must has its own privacy policy ( use generator service  ) 
       # super global variables => $_ENV
       # protocol://domainName-OR-ip:port/resource /* https port 443 */
       # portal application means customer use it to make actions
@@ -33,8 +34,6 @@ let WebBasics = () => (
         - to customize upload input style 
           $ input::file-selector-button {  } 
           $ OR make a hidden file input & custom visible element with js  
-
-
 
       # software requirement specifications (SRS)
 
