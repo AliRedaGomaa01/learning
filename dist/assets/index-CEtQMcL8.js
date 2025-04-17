@@ -44,7 +44,8 @@ Error generating stack: `+i.message+`
       # action when element is on viewport ( seen )
       # super global variables => $_ENV
       # protocol://domainName-OR-ip:port/resource /* https port 443 */
-      * portal application means customer use it to make actions
+      # portal application means customer use it to make actions
+      # The web is an open environment unlike mobile that is more secure 
       # events :
         * @keyup @keydown @click.prevent  @mouseover @mousemove
       # inspect tool has very powerful options  
@@ -783,6 +784,10 @@ I only use design as a tool in web development
       $ minify & compress 
       $ work on all browsers 
       $ more secure 
+    - "scripts": {
+      "build": "vite build",
+      "postbuild": "copy .htaccess dist\\.htaccess"
+      } 
 
   * data hydration => passing the endpoint server data as props to the page component
 
@@ -989,7 +994,7 @@ I only use design as a tool in web development
   * has many built in declarative tools ( low usage of 3rd packages ) 
   * ( options - composition ) API Types
     - we use "this" keywords many times in option api unlike composition "this" is not defined
-    - composition uses ref & reactive 
+    - composition uses ref (primitive value) & reactive (reference value) 
     - setup is executed in life cycle  before ( created & mounted ) 
   * using <template> & <script setup > & <style scoped>
   * event modifiers : @click.prevent=”” @click.stop="" @keyup.enter=””
@@ -1571,6 +1576,7 @@ I only use design as a tool in web development
       $ share between views in AppServiceProvider
       $ may be used to pass flash messages
       $ $page.props.flash.message  OR usePage().props.flash.message
+    - uses ziggy to access route names 
     - in script usePage() but in template {{ $page }} 
     - <Link href="/logout" method="post"  :data="{ foo: bar }"  preserve-state preserve-scroll 
       :class="$'{' $page.url === '/users' || $page.component === 'Users/Index' ? 'active' : '' }"> Logout </Link>
@@ -1699,9 +1705,9 @@ I only use design as a tool in web development
   # API 
     * might be for mobile app OR Single Page web app OR service
     * Stateless => 
-      - requests without storing in => session or cache  or cookie
+      - depends on every request (tokens) not temporary storage (sessions)   
       - data in request & response are in json  
-    * use CSRF for fullstack app with non GET requests (gives 419 error code)
+    * use CSRF (cross-site request forgery ) for fullstack app with non GET requests (gives 419 error code)
       - csrf ensures that the request came from your website 
         $ not from another fake website ( not optional )
       - CORS is used 
@@ -1710,8 +1716,8 @@ I only use design as a tool in web development
         $ by setting headers to each response 
     * jwt 
       - sign unique data for each use Ex ( email , id ) 
-      -  we can decode them and use them using our custom-secret-key to verify the data 
-    
+      - we can decode them and use them using our custom-secret-key to verify the data 
+
   * notifications :
     - specific device by device token & firebase
     - broadcast for all devices  
@@ -1976,6 +1982,7 @@ I only use design as a tool in web development
   * gates & policies & abort_if() abort()
   * APP_KEY in .env is responsible for encrypt & decrypt
   * guards => Auth::guard('admin')->check()z  middleware('auth:admin')
+  * guards means separate session storage & providers means different database storage  
 
 
       `})}function fp(){const l=["Common","Express","Laravel"],[u,s]=_.useState("Common");return C.jsxs(C.Fragment,{children:[C.jsx(mn,{list:l,selectedItem:u,setSelectedItem:s}),u==="Common"&&C.jsx(sp,{}),u==="Django"&&C.jsx(up,{}),u==="Express"&&C.jsx(cp,{}),u==="Laravel"&&C.jsx(dp,{})]})}function pp(){return C.jsx("pre",{children:`

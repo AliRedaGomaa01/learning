@@ -19,6 +19,7 @@ export default function Laravel() {
       $ share between views in AppServiceProvider
       $ may be used to pass flash messages
       $ $page.props.flash.message  OR usePage().props.flash.message
+    - uses ziggy to access route names 
     - in script usePage() but in template {{ $page }} 
     - <Link href="/logout" method="post"  :data="{ foo: bar }"  preserve-state preserve-scroll 
       :class="$'{' $page.url === '/users' || $page.component === 'Users/Index' ? 'active' : '' }"> Logout </Link>

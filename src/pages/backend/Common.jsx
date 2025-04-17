@@ -88,9 +88,9 @@ export default function Common() {
   # API 
     * might be for mobile app OR Single Page web app OR service
     * Stateless => 
-      - requests without storing in => session or cache  or cookie
+      - depends on every request (tokens) not temporary storage (sessions)   
       - data in request & response are in json  
-    * use CSRF for fullstack app with non GET requests (gives 419 error code)
+    * use CSRF (cross-site request forgery ) for fullstack app with non GET requests (gives 419 error code)
       - csrf ensures that the request came from your website 
         $ not from another fake website ( not optional )
       - CORS is used 
@@ -99,8 +99,8 @@ export default function Common() {
         $ by setting headers to each response 
     * jwt 
       - sign unique data for each use Ex ( email , id ) 
-      -  we can decode them and use them using our custom-secret-key to verify the data 
-    
+      - we can decode them and use them using our custom-secret-key to verify the data 
+
   * notifications :
     - specific device by device token & firebase
     - broadcast for all devices  

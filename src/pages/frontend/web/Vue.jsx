@@ -7,7 +7,7 @@ export default function Vue() {
   * has many built in declarative tools ( low usage of 3rd packages ) 
   * ( options - composition ) API Types
     - we use "this" keywords many times in option api unlike composition "this" is not defined
-    - composition uses ref & reactive 
+    - composition uses ref (primitive value) & reactive (reference value) 
     - setup is executed in life cycle  before ( created & mounted ) 
   * using <template> & <script setup > & <style scoped>
   * event modifiers : @click.prevent=”” @click.stop="" @keyup.enter=””

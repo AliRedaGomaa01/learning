@@ -7,7 +7,8 @@ let WebBasics = () => (
       # action when element is on viewport ( seen )
       # super global variables => $_ENV
       # protocol://domainName-OR-ip:port/resource /* https port 443 */
-      * portal application means customer use it to make actions
+      # portal application means customer use it to make actions
+      # The web is an open environment unlike mobile that is more secure 
       # events :
         * @keyup @keydown @click.prevent  @mouseover @mousemove
       # inspect tool has very powerful options  

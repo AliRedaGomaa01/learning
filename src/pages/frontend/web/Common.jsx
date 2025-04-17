@@ -24,6 +24,10 @@ export default function Common() {
       $ minify & compress 
       $ work on all browsers 
       $ more secure 
+    - "scripts": {
+      "build": "vite build",
+      "postbuild": "copy .htaccess dist\\.htaccess"
+      } 
 
   * data hydration => passing the endpoint server data as props to the page component
 

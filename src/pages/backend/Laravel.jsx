@@ -134,6 +134,7 @@ export default function Laravel() {
   * gates & policies & abort_if() abort()
   * APP_KEY in .env is responsible for encrypt & decrypt
   * guards => Auth::guard('admin')->check()z  middleware('auth:admin')
+  * guards means separate session storage & providers means different database storage  
 
 
       `}
