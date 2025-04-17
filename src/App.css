@@ -1,7 +1,10 @@
 @import "tailwindcss";
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 pre {
   white-space: pre-wrap;
-  font-family: cursive
   /* word-wrap: break-word;  
   overflow-wrap: break-word;  */
 }
