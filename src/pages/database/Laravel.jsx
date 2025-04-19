@@ -9,6 +9,9 @@ export default function Laravel() {
   * $book->isDirty('isbn') 
     - $category = new Category();  $category->name = $request->name  ;  $category->save() ;
   * use User::query()->count(); NOT DB::table('users')->count(); NOT User::count(); 
+  * always use beginTransaction() commit() rollBack() in eloquent
+  * using $with attribute in the model causes serializing errors
+    - solve it with ->withOnly()
 
       `}
     </pre>

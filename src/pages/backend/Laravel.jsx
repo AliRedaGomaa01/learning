@@ -17,6 +17,7 @@ export default function Laravel() {
   * seeding & factories ( Faker ) 
   * request files to validate request data 
   * queues => background jobs & tasks ( async )
+  * edit default exception response => ex. redirecting unauth to login  
   * to reach php.info location 
     - for  apache  => execute phpinfo() in your laravel code or tinker
     - for terminal CMD => execute php -ini in your terminal  
@@ -134,7 +135,11 @@ export default function Laravel() {
   * gates & policies & abort_if() abort()
   * APP_KEY in .env is responsible for encrypt & decrypt
   * guards => Auth::guard('admin')->check()z  middleware('auth:admin')
-  * guards means separate session storage & providers means different database storage  
+  * guards means separate session storage & providers means different database storage 
+  * throttle => limits for this client ip to ask for this request ( 10 req per minute )
+  * remembering user option && regenerate sessions on logout & login 
+  * email verification & protect by ( verified - confirm password )
+  * we can make a middleware after handling the controller logic  
 
 
       `}

@@ -1,6 +1,9 @@
 @import "tailwindcss";
 body , pre {
   font-family: 'Times New Roman', Times, serif !important;
+  line-height: 3rem !important;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
 }
 
 pre {

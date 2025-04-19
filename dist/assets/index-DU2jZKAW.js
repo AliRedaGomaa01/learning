@@ -1867,6 +1867,7 @@ I only use design as a tool in web development
   * seeding & factories ( Faker ) 
   * request files to validate request data 
   * queues => background jobs & tasks ( async )
+  * edit default exception response => ex. redirecting unauth to login  
   * to reach php.info location 
     - for  apache  => execute phpinfo() in your laravel code or tinker
     - for terminal CMD => execute php -ini in your terminal  
@@ -1984,7 +1985,11 @@ I only use design as a tool in web development
   * gates & policies & abort_if() abort()
   * APP_KEY in .env is responsible for encrypt & decrypt
   * guards => Auth::guard('admin')->check()z  middleware('auth:admin')
-  * guards means separate session storage & providers means different database storage  
+  * guards means separate session storage & providers means different database storage 
+  * throttle => limits for this client ip to ask for this request ( 10 req per minute )
+  * remembering user option && regenerate sessions on logout & login 
+  * email verification & protect by ( verified - confirm password )
+  * we can make a middleware after handling the controller logic  
 
 
       `})}function fp(){const l=["Common","Express","Laravel"],[u,s]=_.useState("Common");return C.jsxs(C.Fragment,{children:[C.jsx(mn,{list:l,selectedItem:u,setSelectedItem:s}),u==="Common"&&C.jsx(sp,{}),u==="Django"&&C.jsx(up,{}),u==="Express"&&C.jsx(cp,{}),u==="Laravel"&&C.jsx(dp,{})]})}function pp(){return C.jsx("pre",{children:`
@@ -2052,6 +2057,9 @@ I only use design as a tool in web development
   * $book->isDirty('isbn') 
     - $category = new Category();  $category->name = $request->name  ;  $category->save() ;
   * use User::query()->count(); NOT DB::table('users')->count(); NOT User::count(); 
+  * always use beginTransaction() commit() rollBack() in eloquent
+  * using $with attribute in the model causes serializing errors
+    - solve it with ->withOnly()
 
       `})}function yp(){const l=["Common","Express","Laravel"],[u,s]=_.useState("Common");return C.jsxs(C.Fragment,{children:[C.jsx(mn,{list:l,selectedItem:u,setSelectedItem:s}),u==="Common"&&C.jsx(pp,{}),u==="Django"&&C.jsx(mp,{}),u==="Express"&&C.jsx(hp,{}),u==="Laravel"&&C.jsx(gp,{})]})}function vp(){return C.jsx("pre",{children:`
 # important info
