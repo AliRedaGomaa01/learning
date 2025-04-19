@@ -1,6 +1,6 @@
 export default function Typescript() {
   return (
-    <>
+    <pre>
       {`
 # TS  built on js (dynamically types) and is compiled to js to be used on browser
 # it prevents unexpected behavior & unexpected errors
@@ -41,6 +41,6 @@ export default function Typescript() {
 
 
       `} 
-    </>
+    </pre>
   )
 }

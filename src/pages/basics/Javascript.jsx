@@ -1,6 +1,6 @@
 export default function Javascript() {
   return (
-    <>
+    <pre>
     {`
 # remember always that each html element is a dom object with properties & methods
 # arrow fnc is not block scoped ( fix ( this ) issues )
@@ -15,6 +15,6 @@ export default function Javascript() {
 
     
     `}
-    </>
+    </pre>
   )
 }

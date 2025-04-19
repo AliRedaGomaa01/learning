@@ -671,7 +671,7 @@ I only use design as a tool in web development
     - having instance object variable 
     - call its method & attributes as static
       
-      `});function Gf(){return C.jsx(C.Fragment,{children:`
+      `});function Gf(){return C.jsx("pre",{children:`
 # remember always that each html element is a dom object with properties & methods
 # arrow fnc is not block scoped ( fix ( this ) issues )
 # some array methods returns new array (Ex. filter()) && others edit the origin one (Ex. splice())
@@ -684,7 +684,7 @@ I only use design as a tool in web development
 
 
     
-    `})}function Kf(){return C.jsx(C.Fragment,{children:`
+    `})}function Kf(){return C.jsx("pre",{children:`
 # TS  built on js (dynamically types) and is compiled to js to be used on browser
 # it prevents unexpected behavior & unexpected errors
 # it gives errors only in type-script-file when coding

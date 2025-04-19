@@ -1,6 +1,6 @@
 @import "tailwindcss";
-body {
-  font-family: 'Times New Roman', Times, serif;
+body , pre {
+  font-family: 'Times New Roman', Times, serif !important;
 }
 
 pre {
