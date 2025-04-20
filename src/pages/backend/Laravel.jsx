@@ -21,6 +21,8 @@ export default function Laravel() {
   * to reach php.info location 
     - for  apache  => execute phpinfo() in your laravel code or tinker
     - for terminal CMD => execute php -ini in your terminal  
+  * name space => namespace App\\Http\\Controllers; => use App\\Http\\Controllers\\Controller;
+    - use Exception or \\Exception
 
 # php :
   * super global variables => $_ENV $_GET $_SERVER 
@@ -130,6 +132,13 @@ export default function Laravel() {
     - override deleting to delete the files with the record deletion if exists
     - make file system driver config => public
     - search for best code to rename image file  
+
+# routing : 
+  * php artisan route:list
+  * finding the first path match & ignore the rest 
+    - /posts/create before /posts/{id}
+  * in controller => store(Request $request , $pathParam) NOT store($pathParam , Request $request)  
+
 
 # security :
   * gates & policies & abort_if() abort()

@@ -67,7 +67,8 @@ export default function Common() {
     - grouping
     - share data to all responses or all views
     - large data pagination 
-    - redirecting [internal - external] & flash messages
+    - redirecting [internal - external] 
+    - flash messages for next GET request only & flash old() for input-values
 
   * views ( template engines )
 
