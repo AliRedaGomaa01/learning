@@ -62,8 +62,8 @@ let Css = () => (
     $ position 
     $ inline & inline-block 
     $ float 
-    $ flex 
-    $ grid 
+    $ flex ( 1 dimension  )
+    $ grid ( 2 dimensions )
     $ column-count
     
 # property notes

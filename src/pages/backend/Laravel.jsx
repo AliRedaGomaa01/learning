@@ -41,13 +41,15 @@ export default function Laravel() {
   * php artisan env:encrypt --key=3UVsEgGVK36XN82KKeyLFMhvosbZN1aF => encrypt env file to share it via VSC  
     $ php artisan env:decrypt --key=3UVsEgGVK36XN82KKeyLFMhvosbZN1aF
   
-# packages : (  packagist.org  )
+# packages :
+  !!! packagist.org 
+  !!! most dependencies are not compatible with the latest version
   * laravel/installer => laravel CLI
   * debugbar
   * telescope
   * trans
   * socialite
-  * spatia ( media - multi tenant  )
+  * spatie ( medialibrary - permission - pdf - multi tenancy )
   * breeze & jetstream
   * passport & sanctum
   * Carbon ( data & time ) [ diffForHumans ] 
@@ -134,11 +136,16 @@ export default function Laravel() {
     - search for best code to rename image file  
 
 # routing : 
-  * php artisan route:list
-  * finding the first path match & ignore the rest 
+  * php artisan route:list --path=pathStartsWithThisWord --name=routeNameStartsWithThisWord
+  * php artisan route:list -v --help  // to display middleware
+  * finding the first match & ignore the rest 
     - /posts/create before /posts/{id}
-  * in controller => store(Request $request , $pathParam) NOT store($pathParam , Request $request)  
-
+    - /posts/search before Route:resource('posts' , 'PostController');
+  * in controller => store(Request $request , $pathParam) NOT store($pathParam , Request $request) 
+  * api.php , web.php , console.php ( commands )
+  * two route names for the same path but with two methods 
+    - EX. posts ( '/posts' & GET ) & posts.store ( '/posts' & POST )
+  * some errors only need to change route arrange 
 
 # security :
   * gates & policies & abort_if() abort()
@@ -150,8 +157,13 @@ export default function Laravel() {
   * email verification & protect by ( verified - confirm password )
   * we can make a middleware after handling the controller logic  
 
+# real time : 
+  * mqtt
+  * pusher
+  * FCM 
+  * socket.io
 
-      `}
+`}
     </pre>
   );
 }

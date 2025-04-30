@@ -33,11 +33,12 @@ export default function Web() {
   * npm install - 
   * npm run build -  
   * cron jobs ( queue work )
-  * php artisan migrate --seed
-  * php artisan storage:link 
+  * php artisan migrate --seed  ( OR get a clone from server database )
+  * you may need a clone of server storage
   * prepare maintenance mode option 
   * caching => php artisan optimize 
   * htaccess file 
+  * copy of storage folder then => php artisan storage:link 
 
 # cronjob
   * hostinger
