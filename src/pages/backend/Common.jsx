@@ -108,6 +108,15 @@ export default function Common() {
     - sms & whatsapp & emails 
     - database 
     - read status 
+    - FCM notification 
+      $ send to a topic ( +500 user  )
+      $ send a multicast ( 2-500 user )
+      $ send to a specific token ( 1 user )
+      $ store in the database
+        * user device tokens 
+        * topic tokens
+        * message payload 
+      $ delete invalid & notfound tokens 
 
   * payment
     - stripe ( search stripe payments docs )
@@ -117,7 +126,16 @@ export default function Common() {
       * collect payment method ---- then verify it
       * charge amount from method ---- then manage payments in database 
 
-  * patterns MVC  ( model : database , view : UI , controllers : connector )
+  * patterns 
+    - MVC  ( model : database , view : UI , controllers : connector )
+    - HMVC modules pattern
+    - observer-action pattern ( logic on model actions ex. created - updated - deleted )
+    - laravel filament resources pattern
+    - database repository pattern
+    - service layer pattern 
+    - facade pattern
+    - factory pattern
+    - singleton pattern 
 
   * automated testing => test code using code  
 

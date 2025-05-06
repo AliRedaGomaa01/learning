@@ -23,6 +23,7 @@ export default function Laravel() {
     - for terminal CMD => execute php -ini in your terminal  
   * name space => namespace App\\Http\\Controllers; => use App\\Http\\Controllers\\Controller;
     - use Exception or \\Exception
+  * observers => events & listeners on model actions ex. created - updated - deleted
 
 # php :
   * super global variables => $_ENV $_GET $_SERVER 
@@ -63,8 +64,8 @@ export default function Laravel() {
   * chart.js charts  
   * datatables.js features for tables   
   * filament ( for admin panels )
+  * kreait/firebase-php => fcm notifications
 
-  
 # code tips & tricks :
   * (object) $myArr  => to solve $myArr->id  errors
   * logging [ie. storage/lararvel.log ] => 

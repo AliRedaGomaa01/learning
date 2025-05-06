@@ -28,17 +28,18 @@ export default function Web() {
     - APP_ENV=production  
     - APP_DEBUG=false  
     - 3rd api party configuration ( ex. stripe  )
-  * composer install - 
+    - lang 
+    - storage public option
+  * composer install
   * php artisan key:generate
-  * npm install - 
-  * npm run build -  
+  * npm install 
+  * npm run build  
   * cron jobs ( queue work )
   * php artisan migrate --seed  ( OR get a clone from server database )
-  * you may need a clone of server storage
-  * prepare maintenance mode option 
   * caching => php artisan optimize 
   * htaccess file 
-  * copy of storage folder then => php artisan storage:link 
+  * copy of storage folder on the server then => php artisan storage:link 
+  * prepare maintenance mode option 
 
 # cronjob
   * hostinger
