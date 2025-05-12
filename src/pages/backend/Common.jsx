@@ -139,6 +139,11 @@ export default function Common() {
 
   * automated testing => test code using code  
 
+  * test controller for personal tests 
+    - updateMigration ( php artisan then git history ) 
+    - test endpoint to check if it works
+    - postman info
+
 ### notes
   # template engine  
     * server html

@@ -34,7 +34,7 @@ export default function Web() {
   * php artisan key:generate
   * npm install 
   * npm run build  
-  * cron jobs ( queue work )
+  * cron jobs ( queue work ) ( schedule:run )
   * php artisan migrate --seed  ( OR get a clone from server database )
   * caching => php artisan optimize 
   * htaccess file 

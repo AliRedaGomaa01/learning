@@ -25,6 +25,17 @@ export default function Laravel() {
     - use Exception or \\Exception
   * observers => events & listeners on model actions ex. created - updated - deleted
 
+# dependency injection management 
+  * app->()->bind(); && app->make();
+  * service container => make many instances of a class in a project 
+    - with some injected value on construct
+  * singleton => service container specialized in making one instance of
+    - a class in a project and use it many times
+  * service provider => 
+    - register() used to inject & bind services & singletons 
+      $ not all code available before boot ex. some facades like DB
+    - boot() to run code or publish data when app start 
+
 # php :
   * super global variables => $_ENV $_GET $_SERVER 
 

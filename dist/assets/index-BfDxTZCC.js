@@ -1758,6 +1758,11 @@ I only use design as a tool in web development
 
   * automated testing => test code using code  
 
+  * test controller for personal tests 
+    - updateMigration ( php artisan then git history ) 
+    - test endpoint to check if it works
+    - postman info
+
 ### notes
   # template engine  
     * server html
@@ -1893,6 +1898,17 @@ I only use design as a tool in web development
   * name space => namespace App\\Http\\Controllers; => use App\\Http\\Controllers\\Controller;
     - use Exception or \\Exception
   * observers => events & listeners on model actions ex. created - updated - deleted
+
+# dependency injection management 
+  * app->()->bind(); && app->make();
+  * service container => make many instances of a class in a project 
+    - with some injected value on construct
+  * singleton => service container specialized in making one instance of
+    - a class in a project and use it many times
+  * service provider => 
+    - register() used to inject & bind services & singletons 
+      $ not all code available before boot ex. some facades like DB
+    - boot() to run code or publish data when app start 
 
 # php :
   * super global variables => $_ENV $_GET $_SERVER 
@@ -2162,7 +2178,7 @@ I only use design as a tool in web development
   * php artisan key:generate
   * npm install 
   * npm run build  
-  * cron jobs ( queue work )
+  * cron jobs ( queue work ) ( schedule:run )
   * php artisan migrate --seed  ( OR get a clone from server database )
   * caching => php artisan optimize 
   * htaccess file 
