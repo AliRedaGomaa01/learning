@@ -564,6 +564,12 @@ I only use design as a tool in web development
     - hue-rotate(90deg)  // colors
     - invert(0.3) // colors
     - sepia() // colors
+  * properties that does not work in email & pdf 
+    - css grid & flex box & position flex & sticky   
+    - animation & transitions & some media queries
+    - some fonts 
+    - Pseudo-elements & Selectors
+    - javascript 
   
 # css rules :
   - @font-face { }
@@ -2179,16 +2185,17 @@ I only use design as a tool in web development
   * npm install 
   * npm run build  
   * cron jobs ( queue work ) ( schedule:run )
-  * php artisan migrate --seed  ( OR get a clone from server database )
   * caching => php artisan optimize 
   * htaccess file 
-  * copy of storage folder on the server then => php artisan storage:link 
   * prepare maintenance mode option 
+  * php artisan migrate --seed  ( OR get a clone from server database )
+  * copy of storage folder on the server 
+  * php artisan storage:link => after cloning storage 
 
 # cronjob
   * hostinger
     - /usr/bin/php /home/u12332445678/domains/yourDomain.com/public_html/artisan queue:work --timeout=60 --stop-when-empty
-    - /usr/bin/php /home/u12332445678/domains/yourDomain.com/public_html/artisan schedule:work
+    - /usr/bin/php /home/u12332445678/domains/yourDomain.com/public_html/artisan schedule:work >> /dev/null 2>&1
 
 # scala : 
   * /usr/bin/php82 /usr/bin/composer install 
