@@ -103,6 +103,12 @@ let Css = () => (
     - hue-rotate(90deg)  // colors
     - invert(0.3) // colors
     - sepia() // colors
+  * properties that does not work in email & pdf 
+    - css grid & flex box & position flex & sticky   
+    - animation & transitions & some media queries
+    - some fonts 
+    - Pseudo-elements & Selectors
+    - javascript 
   
 # css rules :
   - @font-face { }
