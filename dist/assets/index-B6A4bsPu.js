@@ -2193,9 +2193,13 @@ I only use design as a tool in web development
   * php artisan storage:link => after cloning storage 
 
 # cronjob
-  * hostinger
-    - /usr/bin/php /home/u12332445678/domains/yourDomain.com/public_html/artisan queue:work --timeout=60 --stop-when-empty
-    - /usr/bin/php /home/u12332445678/domains/yourDomain.com/public_html/artisan schedule:work >> /dev/null 2>&1
+    * hostinger & Laravel
+      - $schedule->command('queue:work --stop-when-empty')->everyMinute()->withoutOverlapping();
+      - /usr/bin/php /home/u12332445678/domains/yourDomain.com/public_html/artisan schedule:run >> /dev/null 2>&1
+    
+    * hostinger
+      - /usr/bin/php /home/u12332445678/domains/yourDomain.com/public_html/artisan queue:work --timeout=60 --stop-when-empty
+      - /usr/bin/php /home/u12332445678/domains/yourDomain.com/public_html/artisan schedule:work >> /dev/null 2>&1  ( :Work not efficient )
 
 # scala : 
   * /usr/bin/php82 /usr/bin/composer install 
