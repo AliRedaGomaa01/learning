@@ -2208,12 +2208,22 @@ I only use design as a tool in web development
 # htaccess
 - redirecting
 $ to file in spa apache react
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ dist/index.html [L,QSA]
-</IfModule>
+    in root 
+          <IfModule mod_rewrite.c>
+            RewriteEngine on
+            RewriteCond %{REQUEST_URI} !public/
+            RewriteRule (.*) /public/$1 [L]
+          </IfModule>
+    in dist 
+          <IfModule mod_rewrite.c>
+            RewriteEngine On
+            RewriteBase /
+
+            # Redirect all requests to index.html except existing files/folders
+            RewriteCond %{REQUEST_FILENAME} !-f
+            RewriteCond %{REQUEST_FILENAME} !-d
+            RewriteRule ^ index.html [QSA,L]
+          </IfModule>
 
 $ to file 
 <IfModule mod_rewrite.c>
