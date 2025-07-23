@@ -64,16 +64,24 @@ $ to file in spa apache react
             RewriteCond %{REQUEST_URI} !public/
             RewriteRule (.*) /public/$1 [L]
           </IfModule>
-    in dist 
-          <IfModule mod_rewrite.c>
-            RewriteEngine On
-            RewriteBase /
 
-            # Redirect all requests to index.html except existing files/folders
-            RewriteCond %{REQUEST_FILENAME} !-f
-            RewriteCond %{REQUEST_FILENAME} !-d
-            RewriteRule ^ index.html [QSA,L]
-          </IfModule>
+    in dist
+     
+    ******** in the next code not that   \\ => \  
+    ( one back slash  )
+    <IfModule mod_rewrite.c>
+      RewriteEngine On
+      RewriteBase /
+
+      # Exclude .js and .css files
+      RewriteCond %{REQUEST_URI} \\.(js|jsx|css)$ [NC]
+      RewriteRule ^ - [L]
+
+      # Redirect all other requests to index.html except existing files/folders
+      RewriteCond %{REQUEST_FILENAME} !-f
+      RewriteCond %{REQUEST_FILENAME} !-d
+      RewriteRule ^ index.html [QSA,L]
+    </IfModule>
 
 $ to file 
 <IfModule mod_rewrite.c>
