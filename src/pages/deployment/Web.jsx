@@ -56,7 +56,20 @@ export default function Web() {
 
 
 # htaccess
-    - redirecting
+- redirecting
+$ to file in spa apache react
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Only rewrite if the request is NOT an existing file or directory
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Redirect all other requests to index.html inside dist/
+  RewriteRule ^(.*)$ /dist/index.html [L]
+</IfModule>
+
 $ to file 
 <IfModule mod_rewrite.c>
 RewriteEngine On
