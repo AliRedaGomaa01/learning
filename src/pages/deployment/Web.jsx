@@ -67,7 +67,7 @@ $ to file in spa apache react
 
     in dist
      
-    ******** in the next code not that   \\ => \  
+    ******** in the next code not that   \\\\ => \\  
     ( one back slash  )
     <IfModule mod_rewrite.c>
       RewriteEngine On

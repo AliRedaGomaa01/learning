@@ -138,7 +138,20 @@ export default function React() {
     {/* html here */} ) }
 
 
+$ adding script in react 
 
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=USD';
+    script.type = 'text/javascript';
+    script.async = true;
+
+    script.onload = () => {
+      ... code here 
+    };
+
+    document.body.appendChild(script);
+  }, []);
 
 
       `}
