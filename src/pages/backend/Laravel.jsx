@@ -175,6 +175,9 @@ export default function Laravel() {
   * FCM 
   * socket.io
 
+# payments :
+        paypal : https://www.youtube.com/watch?v=jjp5etEGTyM
+        stripe: https://www.youtube.com/watch?v=Fqg-9tvkqG4
 `}
     </pre>
   );

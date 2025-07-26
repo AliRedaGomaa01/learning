@@ -34,10 +34,6 @@ export default function Laravel() {
 # performance :
   * use relations & reduce storing as json
 
-# payments :
-        paypal : https://www.youtube.com/watch?v=jjp5etEGTyM
-        stripe: https://www.youtube.com/watch?v=Fqg-9tvkqG4
-
       `}
     </pre>
   );
