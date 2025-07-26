@@ -2159,6 +2159,9 @@ $ adding script in react
 # performance :
   * use relations & reduce storing as json
 
+# payments :
+        paypal : https://www.youtube.com/watch?v=jjp5etEGTyM
+        stripe: https://www.youtube.com/watch?v=Fqg-9tvkqG4
 
       `})}function yp(){const l=["Common","Express","Laravel"],[u,s]=_.useState("Common");return C.jsxs(C.Fragment,{children:[C.jsx(mn,{list:l,selectedItem:u,setSelectedItem:s}),u==="Common"&&C.jsx(pp,{}),u==="Django"&&C.jsx(mp,{}),u==="Express"&&C.jsx(hp,{}),u==="Laravel"&&C.jsx(gp,{})]})}function vp(){return C.jsx("pre",{children:`
 # important info
