@@ -45,6 +45,22 @@ export default function Web() {
 # cronjob
     * hostinger & Laravel
       - $schedule->command('queue:work --stop-when-empty')->everyMinute()->withoutOverlapping();
+      - $schedule->call(function () {
+        // Run immediately
+        Artisan::call('queue:work --stop-when-empty --tries=3 --timeout=90');
+        // Wait 20s and run again
+        sleep(15);
+        Artisan::call('queue:work --stop-when-empty --tries=3 --timeout=90');
+        // Wait 20s more (optional third run)
+        sleep(15);
+        Artisan::call('queue:work --stop-when-empty --tries=3 --timeout=90');
+        sleep(15);
+        Artisan::call('queue:work --stop-when-empty --tries=3 --timeout=90');
+      })
+      ->name('queue-worker') 
+      ->everyMinute()
+      ->withoutOverlapping();
+
       - /usr/bin/php /home/u12332445678/domains/yourDomain.com/public_html/artisan schedule:run >> /dev/null 2>&1
     
     * hostinger
