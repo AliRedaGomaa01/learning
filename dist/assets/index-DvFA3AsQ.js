@@ -143,6 +143,12 @@ Error generating stack: `+i.message+`
   code . 
 
 ************************************************************************************************ 
+# github CLI : 
+
+    winget install GitHub.cli
+    gh auth login
+    gh repo create my-repo --public
+
 
 # git commands : 
 
