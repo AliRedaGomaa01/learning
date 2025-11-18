@@ -148,6 +148,9 @@ Error generating stack: `+i.message+`
     winget install GitHub.cli
     gh auth login
     gh repo create my-repo --public
+    gh pages deploy --branch gh-pages --dir ./path-to-your-site
+    gh pages status
+    // Your site is published at https://username.github.io/repo-name/
 
 
 # git commands : 
