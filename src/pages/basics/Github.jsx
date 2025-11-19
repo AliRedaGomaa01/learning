@@ -54,6 +54,36 @@ let Github = () => (
     gh pages status
     // Your site is published at https://username.github.io/repo-name/
 
+# git actions :
+  # ( deploy on push ) :
+      * make gh-pages branch
+      * create .github/workflows/deploy.yml with this content :  
+          name: Deploy to GitHub Pages
+
+          permissions:
+            contents: write
+
+          # Trigger on push to main branch
+          on:
+            push:
+              branches:
+                - main  # change if your default branch is different
+
+          jobs:
+            deploy:
+              runs-on: ubuntu-latest
+
+              steps:
+                # 1. Checkout the repository
+                - name: Checkout repository
+                  uses: actions/checkout@v3
+
+                # 2. Deploy to GitHub Pages
+                - name: Deploy to GitHub Pages
+                  uses: peaceiris/actions-gh-pages@v4
+                  with:
+                    github_token: \${{ secrets.GITHUB_TOKEN }}
+                    publish_dir: ./  # change to ./dist if your site files are in a folder
 
 # git commands : 
 
