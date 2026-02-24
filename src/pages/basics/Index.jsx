@@ -2,6 +2,7 @@ import { useState } from "react";
 import BasicsNav from "../Nav";
 import WebBasics from "./WebBasics";
 import Github from './Github';
+import Docker from './Docker';
 import Theoretical from './Theoretical';
 import Design from "./styling/Design";
 import Css from "./styling/Css";
@@ -16,6 +17,7 @@ export default function Index() {
   const list = [
     'Web Basics',
     'Github',
+    'Docker',
     'Theoretical',
     'Design',
     'Css', 
@@ -35,6 +37,7 @@ export default function Index() {
 
       { selectedItem === "Web Basics" &&  <WebBasics /> }
       { selectedItem === "Github" &&  <Github /> }
+      { selectedItem === "Docker" &&  <Docker /> }
       { selectedItem === "Theoretical" &&  <Theoretical /> }
       { selectedItem === "Design" &&  <Design /> }
       { selectedItem === "Css" &&  <Css /> }
